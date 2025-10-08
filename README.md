@@ -39,6 +39,7 @@ The website serves as a digital platform for patients and staff, offering:
 ---
 
 ## 📁 Folder Structure
+```text
 project-root/
 │
 ├── README.md
@@ -139,6 +140,7 @@ project-root/
 │ └── valid-id.png
 │ └── valucare.png
 │ └── vision.png
+'''
 
 ---
 
