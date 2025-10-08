@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InterPath Laboratories and Medical Clinics</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container position-relative">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Left Nav -->
+            <ul class="navbar-nav left-nav">
+                <li class="nav-item">
+                    <a class="nav-link active homeRelative" href="index.html"><i class="fa fa-home"></i> Home</a>
+                    <div class="homeHovered">
+                        <img class="homeHoverImg" src="images/navbarHover1.png" alt="">
+                        <div class="homeHoverBox"></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link aboutRelative" href="about.html"><i class="fa fa-user-md"></i> About Us</a>
+                    <div class="aboutHovered">
+                        <img class="aboutHoverImg" src="images/navbarHover.png" alt="">
+                    </div>
+                </li>
+            </ul>
+            <div class="logo-container d-none d-lg-flex">
+                <img src="images/logo1.png" alt="Logo">
+            </div>
+            <!-- Right Nav -->
+            <ul class="navbar-nav right-nav">
+                <li class="nav-item vanishingAct">
+                    <a class="nav-link" href="services.html"><i class="fa fa-staff-snake fa-lg"></i>Medical Services</a>
+                </li>
+                <li class="nav-item vanishingAct">
+                    <a class="nav-link" href="ourdoctors.html"><i class="fa fa-stethoscope"></i> Doctors</a>
+                </li>
+                <li class="nav-item vanishingAct2">
+                    <a class="nav-link servicesRelative" id="servicesToggle" href="#">
+                        <i class="fa fa-clipboard-list"></i> <span class="servicesText">Services</span>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="services-container" id="servicesDropdownAndImage">
+                        <div class="servicesHovered">
+                            <img class="servicesHoverImg" src="images/navbarHover.png" alt="">
+                        </div>
+                        <ul class="servicesDropdown">
+                            <li><a href="services.html"><i class="fa fa-staff-snake fa-lg"></i> Medical Services</a></li>
+                            <li><a href="ourdoctors.html"><i class="fa fa-stethoscope"></i> Doctors</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link contactRelative" href="contact.html"><i class="fa fa-phone"></i> Contact Us</a>
+                    <div class="contactHovered">
+                        <img class="contactHoverImg" src="images/navbarHover1.png" alt="">
+                        <div class="contactHoverBox"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+    </nav>
+
+  <!-- Full Cover Section -->
+  <section class="hero-section">
+    <img src="images/Interpath.png" alt="Interpath" class="full-cover-img">
+  </section>
+
+  <!-- Care & Amenities Section -->
+  <section class="care-amenities py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-4">
+        We Provide Finest Patient's <br>
+        <span class="highlight-text">Care & Amenities</span>
+      </h2>
+      <p class="subtitle mb-5">
+        Interpath Laboratories and Medical Clinics is owned and managed by InterPath Laboratories Inc. 
+        <br>A corporation determined to upgrade the laboratory services in the Calabarzon region.
+      </p>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="amenity-card border-blue">
+            <i class="fa-solid fa-vial icon text-blue"></i>
+            <h5 class="fw-bold">LABORATORY TESTING</h5>
+            <p>View the full list of laboratory tests while adhering to all terms and conditions.</p>
+            <a href="labtest.html" class="btn btn-blue">View All</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="amenity-card border-green">
+            <i class="fa-solid fa-stethoscope icon text-green"></i>
+            <h5 class="fw-bold">FIND A DOCTOR</h5>
+            <p>Connect with our qualified medical professionals for expert healthcare.</p>
+            <a href="ourdoctors.html" class="btn btn-green">View All</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="amenity-card border-pink">
+            <i class="fa-solid fa-truck-medical icon text-pink"></i>
+            <h5 class="fw-bold">IMAGING & DIAGNOSTICS</h5>
+            <p>Explore our Imaging & Diagnostics: X-ray, Ultrasound, 2D Echo, ECG.</p>
+            <a href="services.html" class="btn btn-pink">View All</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="amenity-card border-orange">
+            <i class="fa-solid fa-phone icon text-orange"></i>
+            <h5 class="fw-bold">CONNECT WITH US</h5>
+            <p>Get in touch for appointments, inquiries, and medical support.</p>
+            <a href="contact.html" class="btn btn-orange">View All</a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Seamless Insurance Processing Section -->
+  <section class="insurance-section py-5">
+    <div class="container text-center">
+      <div class="insurance-card mx-auto p-4">
+        <i class="fa-solid fa-shield-halved insurance-icon"></i>
+        <h2 class="fw-bold mb-3">Seamless Insurance Processing</h2>
+        <p class="mb-4">
+          Our accreditation with major HMOs means you can access our services with minimal out of pocket expenses. 
+          <br>We handle the paperwork so you can focus on your health.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <i class="fa-solid fa-circle-check text-primary fs-3 mb-2"></i>
+            <h6 class="fw-bold">Direct Billing</h6>
+            <p>We bill your HMO directly</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fa-solid fa-circle-check text-primary fs-3 mb-2"></i>
+            <h6 class="fw-bold">Pre-authorization</h6>
+            <p>We handle approval processes</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fa-solid fa-circle-check text-primary fs-3 mb-2"></i>
+            <h6 class="fw-bold">Wide Coverage</h6>
+            <p>Most services covered</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accredited HMO Section -->
+  <section class="hmo-section py-5">
+    <div class="container text-center">
+    <h2 class="fw-bold mb-4">Accredited <span style="color:#0066CC;">HMO</span></h2>
+      <p class="mb-5">
+        InterPath Laboratories and Medical Clinics is also accredited by different HMOs. 
+        Thereby providing also health <br>services to their members as well as Annual Physical Examination.
+      </p>
+      <h6 class="mb-5">List of Accredited HMOs:</h6>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3"><div class="hmo-card"><img src="images/sunlife.png" alt="Sun Life"></div></div>
+        <div class="col-6 col-md-3"><div class="hmo-card"><img src="images/medasia.png" alt="MedAsia"></div></div>
+        <div class="col-6 col-md-3"><div class="hmo-card"><img src="images/ims.jpg" alt="IMS"></div></div>
+        <div class="col-6 col-md-3"><div class="hmo-card"><img src="images/pacific-cross.svg" alt="PacificCross"></div></div>
+        <div class="col-6 col-md-3"><div class="hmo-card"><img src="images/valucare.png" alt="ValuCare"></div></div>
+        <div class="col-6 col-md-3"><div class="hmo-card"><img src="images/philcare.jpg" alt="PhilCare"></div></div>
+        <div class="col-6 col-md-3"><div class="hmo-card"><img src="images/medicard.png" alt="Medicard"></div></div>
+        <div class="col-6 col-md-3"><div class="hmo-card"><img src="images/maxicare.jpg" alt="Maxicare"></div></div>
+        <div class="col-6 col-md-3"><div class="hmo-card"><img src="images/lacson.png" alt="Lacson"></div></div>
+        <div class="col-6 col-md-3"><div class="hmo-card"><img src="images/intellicare.jpg" alt="IntelliCare"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="cta-section">
+    <div class="container text-center">
+      <div class="cta-card">
+        <h3 class="fw-bold mb-3">Not sure if your HMO is covered?</h3>
+        <p>Contact us to verify your coverage or learn about our affordable self-pay options.</p>
+        <a href="contact.html" class="btn px-4 py-2">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Terms & Conditions Modal Section -->
+  <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-lg modal-dialog-centered custom-modal">
+      <div class="modal-content terms-modal-content">
+        <!-- Header -->
+        <div class="modal-header justify-content-center">
+          <h5 class="modal-title fw-bold text-center terms-title" id="termsModalLabel">
+            Terms and Conditions
+          </h5>
+        </div>
+        <!-- Body -->
+        <div class="modal-body terms-body">
+          <p>
+            Welcome to Interpath Laboratories’ website. By accessing or using this website, you agree to comply with 
+            and be bound by the following Terms and Conditions. Please read them carefully before using our services.
+          </p>
+          
+          <h6>1. General Use</h6>
+          <p>• This website is owned and operated by Interpath Laboratories, Inc.<br>
+          • The information provided on this site is for general informational purposes only and should not be considered medical advice.<br>
+          • By using our website, you confirm that you are at least 18 years old or are accessing the site under the supervision of a parent or guardian.</p>
+
+          <h6>2. Medical Disclaimer</h6>
+          <p>• Content on this site, including articles, posts, or service descriptions, is provided for educational and informational purposes.<br>
+          • It does not substitute professional medical consultation, diagnosis, or treatment.<br>
+          • Always consult your physician or qualified healthcare provider regarding any medical condition or before making health-related decisions.</p>
+
+          <h6>3. Services and Appointments</h6>
+          <p>• Interpath Laboratories provides laboratory testing, diagnostics, and clinical services both in-clinic and via home service.<br>
+          • Appointment availability is subject to confirmation and may change without prior notice.<br>
+          • Test results will only be released in accordance with our confidentiality and patient data policies.</p>
+
+          <h6>4. Pricing and Payments</h6>
+          <p>• Prices for services are subject to change without prior notice.<br>
+          • Full payment is required at the time of service unless otherwise covered by HMO arrangements or corporate accounts.<br>
+          • Refunds, if applicable, will follow Interpath’s refund and cancellation policy.</p>
+
+          <h6>5. Confidentiality and Data Privacy</h6>
+          <p>• Interpath is committed to protecting patient confidentiality in compliance with the Data Privacy Act of 2012 (RA 10173) and other applicable laws.<br>
+          • Personal and medical information collected will only be used for healthcare delivery, billing, and related purposes.<br>
+          • By using our services, you consent to the collection and use of your information as described in our Privacy Policy.</p>
+
+          <h6>6. Intellectual Property</h6>
+          <p>• All website content—including text, graphics, images, logos, and trademarks—are the property of Interpath Laboratories, Inc. and are protected by applicable intellectual property laws.<br>
+          • You may not copy, reproduce, distribute, or use any material from this website without prior written consent.</p>
+
+          <h6>7. Limitation of Liability</h6>
+          <p>• Interpath Laboratories will not be liable for any damages resulting from the use or inability to use our website or services.<br>
+          • We do not guarantee uninterrupted access, error-free content, or that the website is free from viruses or harmful components.</p>
+
+          <h6>8. Third-Party Links</h6>
+          <p>• Our website may contain links to third-party websites for your convenience.<br>
+          • Interpath is not responsible for the content, security, or privacy practices of external websites.</p>
+
+          <h6>9. Changes to Terms</h6>
+          <p>• Interpath Laboratories reserves the right to modify or update these Terms and Conditions at any time without prior notice.<br>
+          • Continued use of our website after changes are posted constitutes acceptance of the revised Terms.</p>
+
+          <h6>10. Governing Law</h6>
+          <p>• These Terms and Conditions are governed by the laws of the Republic of the Philippines.<br>
+          • Any disputes arising shall be subject to the jurisdiction of the appropriate courts in the Philippines.</p>
+
+          <h6>11. Contact Us</h6>
+          <p>For inquiries regarding these Terms and Conditions, you may contact us at:<br>
+          📧 interpathlaboratories@gmail.com <br> 
+          📞 0998 994 7284 <br> 
+          🏥 Ortigas Ave Ext, Taytay, 1920 Rizal</p>
+        </div>
+        <!-- Footer with Checkbox and Accept Button -->
+        <div class="modal-footer d-flex justify-content-between">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="acceptCheck">
+            <label class="form-check-label" for="acceptCheck">
+              I confirm that I have read and accept the terms and conditions.
+            </label>
+          </div>
+          <button type="button" class="accept-btn" id="acceptBtn" disabled>
+            Accept
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Contact Group Section -->
+    <div class="contact-group">
+        <a class="contact-btn" href="https://m.me/interPath.Lab"></a>
+        <a class="contact-label" href="https://m.me/interPath.Lab">Contact Us!</a>
+    </div>
+    
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-top text-center mb-4">
+        <img src="images/InterpathLogo.png" alt="InterPath Logo" class="footer-logo">
+      </div>
+      <hr>
+      <div class="row text-start text-center text-md-start justify-content-center">
+        <!-- Location -->
+        <div class="col-md-2 mb-4 me-md-4">
+          <p>
+            <strong>Locations:</strong><br>
+            2F & 3F, MORE Business Center, Ortigas Avenue Extension,<br>
+            San Isidro, Taytay, Rizal
+          </p>
+          <p>
+            <strong>Visiting Hours:</strong><br>
+            Monday – Saturday:<br>
+            07:00 AM – 4:00 PM
+          </p>
+        </div>
+        <!-- Community -->
+        <div class="col-md-2 mb-4">
+          <p><strong>Community</strong></p>
+          <ul class="list-unstyled">
+            <li><a href="ourdoctors.html">Doctors</a></li>
+            <li><a href="https://www.google.com/maps/place/InterPath+Laboratories+and+Medical+Center/@14.5801393,121.1320412,896m/data=!3m1!1e3!4m8!3m7!1s0x3397c77afe73b861:0xfaceea22835ad79!8m2!3d14.5801393!4d121.1346161!9m1!1b1!16s%2Fg%2F12jvylqq2?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D">Testimonials</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="https://maps.app.goo.gl/78hUXrhTftRBS1Jq9">Site Map</a></li>
+          </ul>
+        </div>
+        <!-- About -->
+        <div class="col-md-2 mb-4">
+          <p><strong>About</strong></p>
+          <ul class="list-unstyled">
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <!-- Terms + Data -->
+        <div class="col-md-2 mb-4">
+          <p><strong>Trust & Legal</strong></p>
+          <ul class="list-unstyled">
+          <li>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#termsModalClick">
+              Terms & Conditions
+            </a>
+          </li>
+          <li><a href="dataPrivacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="col-md-2 mb-4 text-center">
+          <p><strong>Social Media</strong></p>
+          <div class="d-flex justify-content-center gap-4">
+            <a href="https://www.facebook.com/interPath.Lab"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://www.instagram.com/interpath_lab"><i class="fab fa-instagram fa-lg"></i></a>
+            <a id="viberLink" href="#">
+              <i class="fab fa-viber fa-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom Bar -->
+    <div class="footer-bottom text-center py-3">
+      © InterPath Laboratory and Medical Clinic 2024 All Rights Reserved
+    </div>
+  </footer>
+
+  <!-- Terms & Conditions Footer Section -->
+  <div class="modal fade" id="termsModalClick" tabindex="-1" aria-labelledby="termsModalClickLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered custom-modal">
+      <div class="modal-content terms-modal-content">
+        <!-- Header with Close -->
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold terms-title text-center w-100" id="termsModalClickLabel">
+            Terms and Conditions
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Unique Body -->
+        <div class="terms-modal-body">
+          <p>
+            Welcome to Interpath Laboratories’ website. By accessing or using this website, you agree to comply with 
+            and be bound by the following Terms and Conditions. Please read them carefully before using our services.
+          </p>
+          
+          <h6>1. General Use</h6>
+          <p>• This website is owned and operated by Interpath Laboratories, Inc.<br>
+          • The information provided on this site is for general informational purposes only and should not be considered medical advice.<br>
+          • By using our website, you confirm that you are at least 18 years old or are accessing the site under the supervision of a parent or guardian.</p>
+
+          <h6>2. Medical Disclaimer</h6>
+          <p>• Content on this site, including articles, posts, or service descriptions, is provided for educational and informational purposes.<br>
+          • It does not substitute professional medical consultation, diagnosis, or treatment.<br>
+          • Always consult your physician or qualified healthcare provider regarding any medical condition or before making health-related decisions.</p>
+
+          <h6>3. Services and Appointments</h6>
+          <p>• Interpath Laboratories provides laboratory testing, diagnostics, and clinical services both in-clinic and via home service.<br>
+          • Appointment availability is subject to confirmation and may change without prior notice.<br>
+          • Test results will only be released in accordance with our confidentiality and patient data policies.</p>
+
+          <h6>4. Pricing and Payments</h6>
+          <p>• Prices for services are subject to change without prior notice.<br>
+          • Full payment is required at the time of service unless otherwise covered by HMO arrangements or corporate accounts.<br>
+          • Refunds, if applicable, will follow Interpath’s refund and cancellation policy.</p>
+
+          <h6>5. Confidentiality and Data Privacy</h6>
+          <p>• Interpath is committed to protecting patient confidentiality in compliance with the Data Privacy Act of 2012 (RA 10173) and other applicable laws.<br>
+          • Personal and medical information collected will only be used for healthcare delivery, billing, and related purposes.<br>
+          • By using our services, you consent to the collection and use of your information as described in our Privacy Policy.</p>
+
+          <h6>6. Intellectual Property</h6>
+          <p>• All website content—including text, graphics, images, logos, and trademarks—are the property of Interpath Laboratories, Inc. and are protected by applicable intellectual property laws.<br>
+          • You may not copy, reproduce, distribute, or use any material from this website without prior written consent.</p>
+
+          <h6>7. Limitation of Liability</h6>
+          <p>• Interpath Laboratories will not be liable for any damages resulting from the use or inability to use our website or services.<br>
+          • We do not guarantee uninterrupted access, error-free content, or that the website is free from viruses or harmful components.</p>
+
+          <h6>8. Third-Party Links</h6>
+          <p>• Our website may contain links to third-party websites for your convenience.<br>
+          • Interpath is not responsible for the content, security, or privacy practices of external websites.</p>
+
+          <h6>9. Changes to Terms</h6>
+          <p>• Interpath Laboratories reserves the right to modify or update these Terms and Conditions at any time without prior notice.<br>
+          • Continued use of our website after changes are posted constitutes acceptance of the revised Terms.</p>
+
+          <h6>10. Governing Law</h6>
+          <p>• These Terms and Conditions are governed by the laws of the Republic of the Philippines.<br>
+          • Any disputes arising shall be subject to the jurisdiction of the appropriate courts in the Philippines.</p>
+
+          <h6>11. Contact Us</h6>
+          <p>For inquiries regarding these Terms and Conditions, you may contact us at:<br>
+          📧 interpathlaboratories@gmail.com <br> 
+          📞 0998 994 7284 <br> 
+          🏥 Ortigas Ave Ext, Taytay, 1920 Rizal</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Viber Modal Section-->
+  <div id="viberModal">
+    <div class="viber-modal-content">
+      <h3>Open your Viber app</h3>
+      <p>and input this number:</p>
+      <div id="viberNumber">+63 998 994 7284</div>
+      <div id="copyMsg">Number copied!</div>
+      <button onclick="document.getElementById('viberModal').style.display='none'">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <!-- FOOTER VIBER -->
+  <script>
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    const viberLink = document.getElementById("viberLink");
+    const viberModal = document.getElementById("viberModal");
+    const viberNumber = document.getElementById("viberNumber");
+    const copyMsg = document.getElementById("copyMsg");
+
+    if (isMobile) {
+      // On mobile → open Viber chat directly
+      viberLink.href = "viber://chat?number=%2B639989947284";
+    } else {
+      // On desktop → show custom modal popup
+      viberLink.addEventListener("click", function(e) {
+        e.preventDefault();
+        viberModal.style.display = "flex";
+      });
+
+      // Copy number when clicked
+      viberNumber.addEventListener("click", function() {
+        const number = viberNumber.textContent.trim();
+        navigator.clipboard.writeText(number).then(() => {
+          copyMsg.style.display = "block";
+          setTimeout(() => copyMsg.style.display = "none", 2000);
+        });
+      });
+    }
+  </script>
+
+  <!-- Terms and Conditions -->
+  <script>
+    (function () {
+      function isReloadNavigation() {
+        try {
+          const navEntries = performance.getEntriesByType && performance.getEntriesByType('navigation');
+          if (navEntries && navEntries.length) {
+            return navEntries[0].type === 'reload';
+          }
+          if (performance.navigation) {
+            return performance.navigation.type === 1;
+          }
+        } catch (e) {}
+        return false;
+      }
+
+      try { localStorage.removeItem('termsAccepted'); } catch (e) {}
+
+      if (isReloadNavigation()) {
+        try { sessionStorage.removeItem('termsAccepted'); } catch (e) {}
+      }
+
+      window.addEventListener('pageshow', function (ev) {
+        if (ev.persisted) {
+          try { sessionStorage.removeItem('termsAccepted'); } catch (e) {}
+        }
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var modalEl = document.getElementById('termsModal');
+        if (!modalEl) return;
+        var acceptCheck = document.getElementById('acceptCheck');
+        var acceptBtn = document.getElementById('acceptBtn');
+
+        if (!window.bootstrap || !bootstrap.Modal) {
+          console.error('Bootstrap Modal not available.');
+          return;
+        }
+
+        var termsModal = new bootstrap.Modal(modalEl);
+
+        try {
+          if (!sessionStorage.getItem('termsAccepted')) {
+            termsModal.show();
+          }
+        } catch (e) {
+          termsModal.show();
+          console.warn('sessionStorage not accessible; showing modal by default.');
+        }
+
+        if (acceptCheck && acceptBtn) {
+          acceptCheck.addEventListener('change', function () {
+            acceptBtn.disabled = !this.checked;
+          });
+
+          acceptBtn.addEventListener('click', function () {
+            try {
+              sessionStorage.setItem('termsAccepted', 'true');
+            } catch (e) {}
+            termsModal.hide();
+          });
+        }
+      });
+    })();
+  </script>
+
+  <!-- NavBar -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const servicesToggle = document.getElementById('servicesToggle');
+      const servicesContainer = document.querySelector('.services-container');
+      const caretIcon = servicesToggle.querySelector('.fa-caret-down');
+
+      servicesToggle.addEventListener('click', function(event) {
+          event.preventDefault();
+          servicesContainer.classList.toggle('show');
+          servicesToggle.classList.toggle('show-link');
+          caretIcon.classList.toggle('rotate');
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

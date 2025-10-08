@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us for any inquiries or support. We're here to help you with your questions and provide assistance. Reach out to our team today!">
+    <title>Contact Us – Interpath</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container position-relative">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Left Nav -->
+            <ul class="navbar-nav left-nav">
+                <li class="nav-item">
+                    <a class="nav-link homeRelative" href="index.html"><i class="fa fa-home"></i> Home</a>
+                    <div class="homeHovered">
+                        <img class="homeHoverImg" src="images/navbarHover1.png" alt="">
+                        <div class="homeHoverBox"></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link aboutRelative" href="about.html"><i class="fa fa-user-md"></i> About Us</a>
+                    <div class="aboutHovered">
+                        <img class="aboutHoverImg" src="images/navbarHover.png" alt="">
+                    </div>
+                </li>
+            </ul>
+            <div class="logo-container d-none d-lg-flex">
+                <img src="images/logo1.png" alt="Logo">
+            </div>
+            <!-- Right Nav -->
+            <ul class="navbar-nav right-nav">
+                <li class="nav-item vanishingAct">
+                    <a class="nav-link" href="services.html"><i class="fa fa-staff-snake fa-lg"></i>Medical Services</a>
+                </li>
+                <li class="nav-item vanishingAct">
+                    <a class="nav-link" href="ourdoctors.html"><i class="fa fa-stethoscope"></i> Doctors</a>
+                </li>
+                <li class="nav-item vanishingAct2">
+                    <a class="nav-link servicesRelative" id="servicesToggle" href="#">
+                        <i class="fa fa-clipboard-list"></i> <span class="servicesText">Services</span>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="services-container" id="servicesDropdownAndImage">
+                        <div class="servicesHovered">
+                            <img class="servicesHoverImg" src="images/navbarHover.png" alt="">
+                        </div>
+                        <ul class="servicesDropdown">
+                            <li><a href="services.html"><i class="fa fa-staff-snake fa-lg"></i> Medical Services</a></li>
+                            <li><a href="ourdoctors.html"><i class="fa fa-stethoscope"></i> Doctors</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active contactRelative" href="contact.html"><i class="fa fa-phone"></i> Contact Us</a>
+                    <div class="contactHovered">
+                        <img class="contactHoverImg" src="images/navbarHover1.png" alt="">
+                        <div class="contactHoverBox"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+    </nav>
+    <section>
+        <textHeader1>
+            <h1 class="pageTitle">Contact Us</h1>
+            <p class="pageSubtitle">Get in touch with our team anytime.</p>
+        </textHeader1>
+    </section>
+    <section class="lightBlue space-between">
+        <leftSection>
+            <textSection>
+                <h2 class="subHeaderText">Contact Information</h2>
+                <p class="textContent">We're here to assist you with any inquiries or support you may need. Feel free to reach out to our team through the following contact details:</p>
+            </textSection>
+            <contactSection1>
+                <infoItem onclick="openPhoneApp('+639989947284', this)">
+                    <svg class="contactIcon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z" fill="#000000"></path>
+                        </g>
+                    </svg>
+                    <p class="contactInfo">Phone Num: +63 998 994 7284</p>
+                    <span class="copy-feedback">Copied!</span>
+                </infoItem>
+                <infoItem onclick="openPhoneApp('(632)85702012', this)">
+                    <svg class="contactIcon" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#000000" d="M15.88 3.86l-0.61-1.31c-0.155-0.326-0.443-0.568-0.792-0.658-1.938-0.528-4.161-0.851-6.453-0.891-2.342 0.041-4.565 0.363-6.687 0.934-0.165 0.048-0.453 0.29-0.605 0.609l-0.613 1.317c-0.075 0.152-0.119 0.331-0.12 0.52v0.87c-0.001 0.012-0.001 0.026-0.001 0.041 0 0.392 0.318 0.71 0.71 0.71 0.011 0 0.022-0 0.033-0.001l2.518 0c0.412-0.010 0.742-0.346 0.742-0.76 0-0.018-0.001-0.035-0.002-0.053l0-0.838c-0-0.004-0-0.008-0-0.012 0-0.229 0.119-0.43 0.298-0.546 0.947-0.508 2.069-0.806 3.26-0.806 0.156 0 0.31 0.005 0.464 0.015 0.122-0.011 0.288-0.017 0.456-0.017 1.178 0 2.287 0.291 3.261 0.805 0.143 0.099 0.262 0.3 0.262 0.529 0 0.004-0 0.009-0 0.013l0 0.859c-0.001 0.015-0.002 0.033-0.002 0.050 0 0.413 0.33 0.75 0.741 0.76l2.521 0c0.009 0 0.020 0.001 0.031 0.001 0.392 0 0.71-0.318 0.71-0.71 0-0.014-0-0.029-0.001-0.043l0-0.868c-0.001-0.189-0.045-0.368-0.123-0.527z"></path> <path fill="#000000" d="M12 8.3c-0.624-0.797-1.001-1.815-1.001-2.92 0-0.028 0-0.056 0.001-0.084l-0-0.296h-1v1h-4v-1h-1v0.33c0 0.024 0.001 0.052 0.001 0.080 0 1.105-0.377 2.122-1.009 2.93l-2.992 3.66v3h14v-3zM8 13c-1.657 0-3-1.343-3-3s1.343-3 3-3c1.657 0 3 1.343 3 3s-1.343 3-3 3z"></path> <path fill="#000000" d="M10 10c0 1.105-0.895 2-2 2s-2-0.895-2-2c0-1.105 0.895-2 2-2s2 0.895 2 2z"></path>
+                        </g>
+                    </svg>
+                    <p class="contactInfo">Tel Num: (632) 8570 2012</p>
+                    <span class="copy-feedback">Copied!</span>
+                </infoItem>
+                <infoItem onclick="openViber('09989947284', this)">
+                    <svg class="contactIcon" fill="#000000" viewBox="-0.5 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="m20.19 2.337c-.595-.545-3.005-2.297-8.372-2.32 0 0-6.333-.379-9.418 2.452-1.716 1.716-2.317 4.229-2.386 7.346s-.146 8.959 5.485 10.547h.005l-.005 2.419s-.037.98.607 1.177c.778.244 1.238-.502 1.983-1.304.408-.441.97-1.087 1.397-1.58.6.059 1.296.092 2.001.092 1.827 0 3.602-.225 5.298-.649l-.15.032c.778-.253 5.18-.816 5.892-6.657.744-6.03-.354-9.834-2.337-11.555zm.652 11.115c-.607 4.875-4.173 5.185-4.829 5.395-1.432.364-3.076.572-4.769.572-.486 0-.968-.017-1.445-.051l.064.004s-2.438 2.939-3.197 3.703c-.248.248-.521.228-.516-.267 0-.323.019-4.018.019-4.018-4.767-1.322-4.491-6.298-4.435-8.897s.544-4.735 1.997-6.169c2.612-2.367 7.989-2.016 7.989-2.016 4.543.019 6.718 1.388 7.224 1.847 1.674 1.435 2.527 4.867 1.898 9.896zm-6.511-3.788v.014c0 .168-.136.304-.304.304-.163 0-.296-.128-.303-.289v-.001c.004-.042.007-.092.007-.141 0-.801-.649-1.45-1.45-1.45-.03 0-.06.001-.089.003h.004c-.161-.009-.288-.141-.288-.303 0-.168.136-.304.304-.304h.017-.001c.02-.001.045-.001.069-.001 1.126 0 2.038.912 2.038 2.038 0 .046-.002.092-.005.137v-.006zm.951.531c.047-1.988-1.195-3.544-3.553-3.718-.159-.011-.283-.143-.283-.303 0-.168.136-.304.304-.304.007 0 .015 0 .022.001h-.001.017c2.267 0 4.106 1.838 4.106 4.106 0 .081-.002.162-.007.242l.001-.011c-.004.165-.138.296-.303.296-.168 0-.304-.136-.304-.304 0-.003 0-.005 0-.008zm2.2.629v.002c0 .168-.136.304-.304.304s-.302-.135-.303-.301c-.024-3.822-2.573-5.903-5.662-5.925-.168 0-.303-.136-.303-.303s.136-.303.303-.303c3.459.024 6.239 2.411 6.267 6.525zm-.525 4.598v.009c-.506.891-1.453 1.875-2.428 1.561l-.009-.014c-1.832-.684-3.416-1.578-4.831-2.679l.041.03c-.743-.592-1.396-1.245-1.969-1.963l-.019-.025c-.509-.638-.986-1.352-1.402-2.106l-.04-.079c-.457-.746-.87-1.608-1.193-2.513l-.03-.098c-.314-.975.665-1.922 1.561-2.428h.009c.13-.083.288-.133.458-.133.267 0 .505.123.662.314l.001.002s.581.693.83 1.036c.234.319.549.83.712 1.115.094.147.149.327.149.52 0 .288-.124.547-.322.726l-.001.001-.562.45c-.155.15-.251.36-.251.592 0 .023.001.045.003.067v-.003c.579 1.903 2.048 3.372 3.91 3.941l.042.011c.019.002.042.003.064.003.232 0 .442-.096.592-.25l.45-.562c.18-.199.439-.323.727-.323.193 0 .372.056.524.152l-.004-.002c.813.463 1.516.972 2.157 1.549l-.011-.01c.192.154.313.389.313.652 0 .169-.05.326-.137.458l.002-.003z"></path>
+                            </g>
+                        </svg>
+                    <p class="contactInfo">Viber: 0998 994 7284</p>
+                    <span class="copy-feedback">Copied!</span>
+                </infoItem>
+                <infoItem onclick="location.href='https://web.facebook.com/interPath.Lab'">
+                    <svg class="contactIcon" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M22,3V21a1,1,0,0,1-1,1H15.8V14.255h2.6l.39-3.018H15.8V9.309c0-.874.242-1.469,1.5-1.469h1.6V5.14a21.311,21.311,0,0,0-2.329-.119A3.636,3.636,0,0,0,12.683,9.01v2.227H10.076v3.018h2.607V22H3a1,1,0,0,1-1-1V3A1,1,0,0,1,3,2H21A1,1,0,0,1,22,3Z"></path>
+                        </g>
+                    </svg>
+                    <p class="contactInfo">@Interpath Laboratories and Medical Clinics</p>
+                </infoItem>
+                <infoItem onclick="location.href='https://https://www.instagram.com/interpath_lab/'">
+                    <svg class="contactIcon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier"> 
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#000000"></path> 
+                        <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#000000"></path> 
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#000000"></path>
+                      </g>
+                    </svg>
+                    <p class="contactInfo">@interpath_lab</p>
+                </infoItem>
+                <infoItem onclick="location.href='mailto:interpathlaboratories@gmail.com'">
+                    <svg class="contactIcon" fill="#000000" version="1.1" baseProfile="tiny" id="Layer_1" xmlns:x="&amp;ns_extend;" xmlns:i="&amp;ns_ai;" xmlns:graph="&amp;ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" viewBox="-0.5 0.5 42 42" xml:space="preserve">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M40.5,31.5v-18c0,0-18.2,12.7-19.97,13.359C18.79,26.23,0.5,13.5,0.5,13.5v18c0,2.5,0.53,3,3,3h34 C40.029,34.5,40.5,34.061,40.5,31.5z M40.471,9.971c0-1.821-0.531-2.471-2.971-2.471h-34c-2.51,0-3,0.78-3,2.6l0.03,0.28 c0,0,18.069,12.44,20,13.12C22.57,22.71,40.5,10.1,40.5,10.1L40.471,9.971z"></path>
+                        </g>
+                    </svg>
+                    <p class="contactInfo">interpathlaboratories@gmail.com</p>
+                </infoItem>
+                <infoItem onclick="location.href='https://maps.app.goo.gl/tDPaMAvkjsx1kd8a7'">
+                    <svg class="contactIcon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#000000" d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24 C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24 C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z"></path>
+                        </g>
+                    </svg>
+                    <p class="contactInfo">Ortigas Ave Extension, Taytay, Rizal, 1920</p>
+                </infoItem>
+            </contactSection1>
+        </leftSection>
+        <rightSection>
+            <mapsSection>
+                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3177.554589713013!2d121.13204117413196!3d14.5801392859038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c77afe73b861%3A0xfaceea22835ad79!2sInterPath%20Laboratories%20and%20Medical%20Center!5e1!3m2!1sen!2sph!4v1757477689929!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </mapsSection>
+            <div class="padding-20">
+                <textSection2>
+                    <h2 class="subHeaderText">Contact Information</h2>
+                    <p class="textContent">We're here to assist you with any inquiries or support you may need. Feel free to reach out to our team through the following contact details:</p>
+                </textSection2>
+                <contactSection2>
+                    <infoItem onclick="openPhoneApp('+639989947284', this)">
+                        <svg class="contactIcon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z" fill="#000000"></path>
+                            </g>
+                        </svg>
+                        <p class="contactInfo">Phone Num: +63 998 994 7284</p>
+                        <span class="copy-feedback">Copied!</span>
+                    </infoItem>
+                    <infoItem onclick="openPhoneApp('(632)85702012', this)">
+                        <svg class="contactIcon" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill="#000000" d="M15.88 3.86l-0.61-1.31c-0.155-0.326-0.443-0.568-0.792-0.658-1.938-0.528-4.161-0.851-6.453-0.891-2.342 0.041-4.565 0.363-6.687 0.934-0.165 0.048-0.453 0.29-0.605 0.609l-0.613 1.317c-0.075 0.152-0.119 0.331-0.12 0.52v0.87c-0.001 0.012-0.001 0.026-0.001 0.041 0 0.392 0.318 0.71 0.71 0.71 0.011 0 0.022-0 0.033-0.001l2.518 0c0.412-0.010 0.742-0.346 0.742-0.76 0-0.018-0.001-0.035-0.002-0.053l0-0.838c-0-0.004-0-0.008-0-0.012 0-0.229 0.119-0.43 0.298-0.546 0.947-0.508 2.069-0.806 3.26-0.806 0.156 0 0.31 0.005 0.464 0.015 0.122-0.011 0.288-0.017 0.456-0.017 1.178 0 2.287 0.291 3.261 0.805 0.143 0.099 0.262 0.3 0.262 0.529 0 0.004-0 0.009-0 0.013l0 0.859c-0.001 0.015-0.002 0.033-0.002 0.050 0 0.413 0.33 0.75 0.741 0.76l2.521 0c0.009 0 0.020 0.001 0.031 0.001 0.392 0 0.71-0.318 0.71-0.71 0-0.014-0-0.029-0.001-0.043l0-0.868c-0.001-0.189-0.045-0.368-0.123-0.527z"></path> <path fill="#000000" d="M12 8.3c-0.624-0.797-1.001-1.815-1.001-2.92 0-0.028 0-0.056 0.001-0.084l-0-0.296h-1v1h-4v-1h-1v0.33c0 0.024 0.001 0.052 0.001 0.080 0 1.105-0.377 2.122-1.009 2.93l-2.992 3.66v3h14v-3zM8 13c-1.657 0-3-1.343-3-3s1.343-3 3-3c1.657 0 3 1.343 3 3s-1.343 3-3 3z"></path> <path fill="#000000" d="M10 10c0 1.105-0.895 2-2 2s-2-0.895-2-2c0-1.105 0.895-2 2-2s2 0.895 2 2z"></path>
+                            </g>
+                        </svg>
+                        <p class="contactInfo">Tel Num: (632) 8570 2012</p>
+                        <span class="copy-feedback">Copied!</span>
+                    </infoItem>
+                    <infoItem onclick="openViber('09989947284', this)">
+                        <svg class="contactIcon" fill="#000000" viewBox="-0.5 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="m20.19 2.337c-.595-.545-3.005-2.297-8.372-2.32 0 0-6.333-.379-9.418 2.452-1.716 1.716-2.317 4.229-2.386 7.346s-.146 8.959 5.485 10.547h.005l-.005 2.419s-.037.98.607 1.177c.778.244 1.238-.502 1.983-1.304.408-.441.97-1.087 1.397-1.58.6.059 1.296.092 2.001.092 1.827 0 3.602-.225 5.298-.649l-.15.032c.778-.253 5.18-.816 5.892-6.657.744-6.03-.354-9.834-2.337-11.555zm.652 11.115c-.607 4.875-4.173 5.185-4.829 5.395-1.432.364-3.076.572-4.769.572-.486 0-.968-.017-1.445-.051l.064.004s-2.438 2.939-3.197 3.703c-.248.248-.521.228-.516-.267 0-.323.019-4.018.019-4.018-4.767-1.322-4.491-6.298-4.435-8.897s.544-4.735 1.997-6.169c2.612-2.367 7.989-2.016 7.989-2.016 4.543.019 6.718 1.388 7.224 1.847 1.674 1.435 2.527 4.867 1.898 9.896zm-6.511-3.788v.014c0 .168-.136.304-.304.304-.163 0-.296-.128-.303-.289v-.001c.004-.042.007-.092.007-.141 0-.801-.649-1.45-1.45-1.45-.03 0-.06.001-.089.003h.004c-.161-.009-.288-.141-.288-.303 0-.168.136-.304.304-.304h.017-.001c.02-.001.045-.001.069-.001 1.126 0 2.038.912 2.038 2.038 0 .046-.002.092-.005.137v-.006zm.951.531c.047-1.988-1.195-3.544-3.553-3.718-.159-.011-.283-.143-.283-.303 0-.168.136-.304.304-.304.007 0 .015 0 .022.001h-.001.017c2.267 0 4.106 1.838 4.106 4.106 0 .081-.002.162-.007.242l.001-.011c-.004.165-.138.296-.303.296-.168 0-.304-.136-.304-.304 0-.003 0-.005 0-.008zm2.2.629v.002c0 .168-.136.304-.304.304s-.302-.135-.303-.301c-.024-3.822-2.573-5.903-5.662-5.925-.168 0-.303-.136-.303-.303s.136-.303.303-.303c3.459.024 6.239 2.411 6.267 6.525zm-.525 4.598v.009c-.506.891-1.453 1.875-2.428 1.561l-.009-.014c-1.832-.684-3.416-1.578-4.831-2.679l.041.03c-.743-.592-1.396-1.245-1.969-1.963l-.019-.025c-.509-.638-.986-1.352-1.402-2.106l-.04-.079c-.457-.746-.87-1.608-1.193-2.513l-.03-.098c-.314-.975.665-1.922 1.561-2.428h.009c.13-.083.288-.133.458-.133.267 0 .505.123.662.314l.001.002s.581.693.83 1.036c.234.319.549.83.712 1.115.094.147.149.327.149.52 0 .288-.124.547-.322.726l-.001.001-.562.45c-.155.15-.251.36-.251.592 0 .023.001.045.003.067v-.003c.579 1.903 2.048 3.372 3.91 3.941l.042.011c.019.002.042.003.064.003.232 0 .442-.096.592-.25l.45-.562c.18-.199.439-.323.727-.323.193 0 .372.056.524.152l-.004-.002c.813.463 1.516.972 2.157 1.549l-.011-.01c.192.154.313.389.313.652 0 .169-.05.326-.137.458l.002-.003z"></path>
+                                </g>
+                            </svg>
+                        <p class="contactInfo">Viber: 0998 994 7284</p>
+                    </infoItem>
+                    <infoItem onclick="location.href='https://web.facebook.com/interPath.Lab'">
+                        <svg class="contactIcon" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M22,3V21a1,1,0,0,1-1,1H15.8V14.255h2.6l.39-3.018H15.8V9.309c0-.874.242-1.469,1.5-1.469h1.6V5.14a21.311,21.311,0,0,0-2.329-.119A3.636,3.636,0,0,0,12.683,9.01v2.227H10.076v3.018h2.607V22H3a1,1,0,0,1-1-1V3A1,1,0,0,1,3,2H21A1,1,0,0,1,22,3Z"></path>
+                            </g>
+                        </svg>
+                        <p class="contactInfo">Interpath Laboratories and Medical Center</p>
+                    </infoItem>
+                    <infoItem onclick="location.href='https://https://www.instagram.com/interpath_lab/'">
+                        <svg class="contactIcon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                          <g id="SVGRepo_iconCarrier"> 
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#000000"></path> 
+                            <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#000000"></path> 
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#000000"></path>
+                          </g>
+                        </svg>
+                        <p class="contactInfo">@interpath_lab</p>
+                    </infoItem>
+                    <infoItem onclick="location.href='mailto:interpathlaboratories@gmail.com'">
+                        <svg class="contactIcon" fill="#000000" version="1.1" baseProfile="tiny" id="Layer_1" xmlns:x="&amp;ns_extend;" xmlns:i="&amp;ns_ai;" xmlns:graph="&amp;ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" viewBox="-0.5 0.5 42 42" xml:space="preserve">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M40.5,31.5v-18c0,0-18.2,12.7-19.97,13.359C18.79,26.23,0.5,13.5,0.5,13.5v18c0,2.5,0.53,3,3,3h34 C40.029,34.5,40.5,34.061,40.5,31.5z M40.471,9.971c0-1.821-0.531-2.471-2.971-2.471h-34c-2.51,0-3,0.78-3,2.6l0.03,0.28 c0,0,18.069,12.44,20,13.12C22.57,22.71,40.5,10.1,40.5,10.1L40.471,9.971z"></path>
+                            </g>
+                        </svg>
+                        <p class="contactInfo">interpathlaboratories@gmail.com</p>
+                    </infoItem>
+                    <infoItem onclick="location.href='https://maps.app.goo.gl/tDPaMAvkjsx1kd8a7'">
+                        <svg class="contactIcon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill="#000000" d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24 C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24 C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z"></path>
+                            </g>
+                        </svg>
+                        <p class="contactInfo">Ortigas Ave Extension, Taytay, Rizal, 1920</p>
+                    </infoItem>
+                </contactSection2>
+            </div>
+        </rightSection>
+    </section>
+
+  <!-- Contact Group Section -->
+    <div class="contact-group">
+        <a class="contact-btn" href="https://m.me/interPath.Lab"></a>
+        <a class="contact-label" href="https://m.me/interPath.Lab">Contact Us!</a>
+    </div>
+    
+<!-- New Terms & Conditions Modal (manual open, with close X) -->
+<div class="modal fade" id="termsModalClick" tabindex="-1" aria-labelledby="termsModalClickLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered custom-modal">
+    <div class="modal-content terms-modal-content">
+      
+      <!-- Header with Close X -->
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold terms-title text-center w-100" id="termsModalClickLabel">
+          Terms and Conditions
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Unique Body -->
+      <div class="terms-modal-body">
+        <p>
+          Welcome to Interpath Laboratories’ website. By accessing or using this website, you agree to comply with 
+          and be bound by the following Terms and Conditions. Please read them carefully before using our services.
+        </p>
+        
+        <h6>1. General Use</h6>
+        <p>• This website is owned and operated by Interpath Laboratories, Inc.<br>
+        • The information provided on this site is for general informational purposes only and should not be considered medical advice.<br>
+        • By using our website, you confirm that you are at least 18 years old or are accessing the site under the supervision of a parent or guardian.</p>
+
+        <h6>2. Medical Disclaimer</h6>
+        <p>• Content on this site, including articles, posts, or service descriptions, is provided for educational and informational purposes.<br>
+        • It does not substitute professional medical consultation, diagnosis, or treatment.<br>
+        • Always consult your physician or qualified healthcare provider regarding any medical condition or before making health-related decisions.</p>
+
+        <h6>3. Services and Appointments</h6>
+        <p>• Interpath Laboratories provides laboratory testing, diagnostics, and clinical services both in-clinic and via home service.<br>
+        • Appointment availability is subject to confirmation and may change without prior notice.<br>
+        • Test results will only be released in accordance with our confidentiality and patient data policies.</p>
+
+        <h6>4. Pricing and Payments</h6>
+        <p>• Prices for services are subject to change without prior notice.<br>
+        • Full payment is required at the time of service unless otherwise covered by HMO arrangements or corporate accounts.<br>
+        • Refunds, if applicable, will follow Interpath’s refund and cancellation policy.</p>
+
+        <h6>5. Confidentiality and Data Privacy</h6>
+        <p>• Interpath is committed to protecting patient confidentiality in compliance with the Data Privacy Act of 2012 (RA 10173) and other applicable laws.<br>
+        • Personal and medical information collected will only be used for healthcare delivery, billing, and related purposes.<br>
+        • By using our services, you consent to the collection and use of your information as described in our Privacy Policy.</p>
+
+        <h6>6. Intellectual Property</h6>
+        <p>• All website content—including text, graphics, images, logos, and trademarks—are the property of Interpath Laboratories, Inc. and are protected by applicable intellectual property laws.<br>
+        • You may not copy, reproduce, distribute, or use any material from this website without prior written consent.</p>
+
+        <h6>7. Limitation of Liability</h6>
+        <p>• Interpath Laboratories will not be liable for any damages resulting from the use or inability to use our website or services.<br>
+        • We do not guarantee uninterrupted access, error-free content, or that the website is free from viruses or harmful components.</p>
+
+        <h6>8. Third-Party Links</h6>
+        <p>• Our website may contain links to third-party websites for your convenience.<br>
+        • Interpath is not responsible for the content, security, or privacy practices of external websites.</p>
+
+        <h6>9. Changes to Terms</h6>
+        <p>• Interpath Laboratories reserves the right to modify or update these Terms and Conditions at any time without prior notice.<br>
+        • Continued use of our website after changes are posted constitutes acceptance of the revised Terms.</p>
+
+        <h6>10. Governing Law</h6>
+        <p>• These Terms and Conditions are governed by the laws of the Republic of the Philippines.<br>
+        • Any disputes arising shall be subject to the jurisdiction of the appropriate courts in the Philippines.</p>
+
+        <h6>11. Contact Us</h6>
+        <p>For inquiries regarding these Terms and Conditions, you may contact us at:<br>
+        📧 interpathlaboratories@gmail.com <br> 
+        📞 0998 994 7284 <br> 
+        🏥 Ortigas Ave Ext, Taytay, 1920 Rizal</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-top text-center mb-4">
+        <img src="images/InterpathLogo.png" alt="InterPath Logo" class="footer-logo">
+      </div>
+      <hr>
+      <div class="row text-start text-center text-md-start justify-content-center">
+        <!-- Location -->
+        <div class="col-md-2 mb-4 me-md-4">
+          <p>
+            <strong>Locations:</strong><br>
+            2F & 3F, MORE Business Center, Ortigas Avenue Extension,<br>
+            San Isidro, Taytay, Rizal
+          </p>
+          <p>
+            <strong>Visiting Hours:</strong><br>
+            Monday – Saturday:<br>
+            07:00 AM – 4:00 PM
+          </p>
+        </div>
+        <!-- Community -->
+        <div class="col-md-2 mb-4">
+          <p><strong>Community</strong></p>
+          <ul class="list-unstyled">
+            <li><a href="ourdoctors.html">Doctors</a></li>
+            <li><a href="https://www.google.com/maps/place/InterPath+Laboratories+and+Medical+Center/@14.5801393,121.1320412,896m/data=!3m1!1e3!4m8!3m7!1s0x3397c77afe73b861:0xfaceea22835ad79!8m2!3d14.5801393!4d121.1346161!9m1!1b1!16s%2Fg%2F12jvylqq2?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D">Testimonials</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="https://maps.app.goo.gl/78hUXrhTftRBS1Jq9">Site Map</a></li>
+          </ul>
+        </div>
+        <!-- About -->
+        <div class="col-md-2 mb-4">
+          <p><strong>About</strong></p>
+          <ul class="list-unstyled">
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <!-- Terms + Data -->
+        <div class="col-md-2 mb-4">
+          <p><strong>Trust & Legal</strong></p>
+          <ul class="list-unstyled">
+          <li>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#termsModalClick">
+              Terms & Conditions
+            </a>
+          </li>
+          <li><a href="dataPrivacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="col-md-2 mb-4 text-center">
+          <p><strong>Social Media</strong></p>
+          <div class="d-flex justify-content-center gap-4">
+            <a href="https://www.facebook.com/interPath.Lab"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://www.instagram.com/interpath_lab"><i class="fab fa-instagram fa-lg"></i></a>
+            <a id="viberLink" href="#">
+              <i class="fab fa-viber fa-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom Bar -->
+    <div class="footer-bottom text-center py-3">
+      © InterPath Laboratory and Medical Clinic 2024 All Rights Reserved
+    </div>
+  </footer>
+
+<!-- Custom Modal VIBER PART-->
+<div id="viberModal">
+  <div class="viber-modal-content">
+    <h3>Open your Viber app</h3>
+    <p>and input this number:</p>
+    <div id="viberNumber">+63 998 994 7284</div>
+    <div id="copyMsg">Number copied!</div>
+    <button onclick="document.getElementById('viberModal').style.display='none'">
+      Close
+    </button>
+  </div>
+</div>
+
+<script>
+  //  Declare once, shared by all functions
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  // ==========================
+  // FOOTER VIBER HANDLING
+  // ==========================
+  const viberLink = document.getElementById("viberLink");
+  const viberModal = document.getElementById("viberModal");
+  const viberNumber = document.getElementById("viberNumber");
+  const copyMsg = document.getElementById("copyMsg");
+
+  if (viberLink) {
+    if (isMobile) {
+      // On mobile → open Viber chat directly
+      viberLink.href = "viber://chat?number=%2B639989947284";
+    } else {
+      // On desktop → show custom modal popup
+      viberLink.addEventListener("click", function(e) {
+        e.preventDefault();
+        viberModal.style.display = "flex";
+      });
+
+      // Copy number when clicked
+      viberNumber.addEventListener("click", function() {
+        const number = viberNumber.textContent.trim();
+        navigator.clipboard.writeText(number).then(() => {
+          copyMsg.style.display = "block";
+          setTimeout(() => copyMsg.style.display = "none", 2000);
+        });
+      });
+    }
+  }
+
+  // ==========================
+  // CONTACT PAGE FUNCTIONS
+  // ==========================
+  function openPhoneApp(text, element) {
+    if (isMobile) {
+      window.location.href = "tel:" + text;
+    } else {
+      copyToClipboard(text, element);
+    }
+  }
+
+  function openViber(text, element) {
+    if (isMobile) {
+      window.location.href = "viber://chat?number=%2B639989947284";
+    } else {
+      copyToClipboard(text, element);
+    }
+  }
+
+  function copyToClipboard(text, element) {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(() => {
+        showCopyFeedback(element);
+      }).catch(err => {
+        console.error('Failed to copy text: ', err);
+        fallbackCopyToClipboard(text, element);
+      });
+    } else {
+      fallbackCopyToClipboard(text, element);
+    }
+  }
+
+  function fallbackCopyToClipboard(text, element) {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.position = 'fixed';
+    textArea.style.left = '-999999px';
+    textArea.style.top = '-999999px';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    
+    try {
+      document.execCommand('copy');
+      showCopyFeedback(element);
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
+      alert('Failed to copy text. Please select and copy manually.');
+    }
+    
+    document.body.removeChild(textArea);
+  }
+
+  function showCopyFeedback(element) {
+    element.classList.add('copied');
+    const feedback = element.querySelector('.copy-feedback');
+    if (feedback) {
+      feedback.classList.add('show');
+      setTimeout(() => {
+        element.classList.remove('copied');
+        feedback.classList.remove('show');
+      }, 2000);
+    }
+  }
+
+  // Copy full text (label + number/email/etc.)
+  function copyFullText(element) {
+    const text = element.querySelector('.contactInfo').textContent;
+    copyToClipboard(text, element);
+  }
+</script>
+
+  <!-- NavBar -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const servicesToggle = document.getElementById('servicesToggle');
+      const servicesContainer = document.querySelector('.services-container');
+      const caretIcon = servicesToggle.querySelector('.fa-caret-down');
+
+      servicesToggle.addEventListener('click', function(event) {
+          event.preventDefault();
+          servicesContainer.classList.toggle('show');
+          servicesToggle.classList.toggle('show-link');
+          caretIcon.classList.toggle('rotate');
+      });
+    });
+  </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

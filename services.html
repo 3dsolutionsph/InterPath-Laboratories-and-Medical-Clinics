@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Frequently asked questions about our services here at Interpath Laboratories and Medical Clinic. Find answers to common inquiries.">
+    <title>Services – Interpath</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/services.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container position-relative">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Left Nav -->
+            <ul class="navbar-nav left-nav">
+                <li class="nav-item">
+                    <a class="nav-link homeRelative" href="index.html"><i class="fa fa-home"></i> Home</a>
+                    <div class="homeHovered">
+                        <img class="homeHoverImg" src="images/navbarHover1.png" alt="">
+                        <div class="homeHoverBox"></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link aboutRelative" href="about.html"><i class="fa fa-user-md"></i> About Us</a>
+                    <div class="aboutHovered">
+                        <img class="aboutHoverImg" src="images/navbarHover.png" alt="">
+                    </div>
+                </li>
+            </ul>
+            <div class="logo-container d-none d-lg-flex">
+                <img src="images/logo1.png" alt="Logo">
+            </div>
+            <!-- Right Nav -->
+            <ul class="navbar-nav right-nav">
+                <li class="nav-item vanishingAct">
+                    <a class="nav-link" href="services.html"><i class="fa fa-staff-snake fa-lg"></i>Medical Services</a>
+                </li>
+                <li class="nav-item vanishingAct">
+                    <a class="nav-link" href="ourdoctors.html"><i class="fa fa-stethoscope"></i> Doctors</a>
+                </li>
+                <li class="nav-item vanishingAct2">
+                    <a class="nav-link active servicesRelative" id="servicesToggle" href="#">
+                        <i class="fa fa-clipboard-list"></i> <span class="servicesText">Services</span>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="services-container" id="servicesDropdownAndImage">
+                        <div class="servicesHovered">
+                            <img class="servicesHoverImg" src="images/navbarHover.png" alt="">
+                        </div>
+                        <ul class="servicesDropdown">
+                            <li><a href="services.html"><i class="fa fa-staff-snake fa-lg"></i> Medical Services</a></li>
+                            <li><a href="ourdoctors.html"><i class="fa fa-stethoscope"></i> Doctors</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link contactRelative" href="contact.html"><i class="fa fa-phone"></i> Contact Us</a>
+                    <div class="contactHovered">
+                        <img class="contactHoverImg" src="images/navbarHover1.png" alt="">
+                        <div class="contactHoverBox"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+    </nav>
+
+  <!-- Hero Section -->
+    <div class="text-center py-5"
+        style="background-image: url('images/bg2.jpg'); background-size: cover; background-position: center; color: black;">
+        <div class="container">
+            <h1 class="display-6 fw-bold mb-1">Comprehensive Healthcare Solutions</h1>
+            <p class="lead">
+                From routine lab tests to specialized consultations, we provide quality
+                healthcare <br> services with experienced medical professionals across the
+                Calabarzon region.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="d-flex justify-content-center">
+        <div class="d-inline-block px-4 py-2 rounded-pill custom-badge green mt-4">
+            <span class="fw-bold"><strong>OUR MEDICAL SERVICES</strong></span>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100 border-primary shadow-sm p-3">
+                    <div class="text-start">
+                        <svg class="laboratoryIcon" fill="#0066cc" viewBox="-2 -2 24.00 24.00"
+                            xmlns="http://www.w3.org/2000/svg" stroke="#0066cc">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0">
+                                <rect x="-2" y="-2" width="24.00" height="24.00" rx="3.36" fill="#e6f0fa"
+                                    strokewidth="0"></rect>
+                            </g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <path
+                                        d="M17,7.94l1-1-.71-.71L13.76,2.71,13.05,2l-1,1,.71.71L9.07,7.39,3.54,8.5h0L2,8.81,11.19,18l1.42-7.07,3.69-3.7Zm-4,.56H9.94l3.82-3.81,1.55,1.55ZM14,16a2,2,0,0,0,4,0c0-1.1-2-3.6-2-3.6S14,14.9,14,16Z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="card-body text-start">
+                        <h5 class="card-title fw-bold">Laboratory Testing</h5>
+                        <p class="card-text text-muted small">
+                            Comprehensive blood tests, urinalysis, pre-employment screenings (APE), drug tests, and
+                            specialized diagnostics.
+                        </p>
+                        <ul class="list-unstyled text-start">
+                        <li>
+                            <i class="bi bi-shield shield"></i> Same-day results
+                            <br>
+                            <small><em>(Please note that special tests may require additional processing time and some tests have running days only.)</em></small>
+                        </li>
+                        <li><i class="bi bi-shield shield"></i> Home service available</li>
+                        <li><i class="bi bi-shield shield"></i> Digital reports</li>
+                        <li><i class="bi bi-shield shield"></i> HMO accepted</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 d-grid">
+                        <a href="labtest.html" class="btn btn-primary fw-bold">View All</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-primary rounded-4 shadow-sm p-3">
+                    <div class="text-start">
+                        <svg class="abmpIcon" fill="#0066cc" version="1.1" id="Capa_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="-46.15 -46.15 553.80 553.80" xml:space="preserve">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0">
+                                <rect x="-46.15" y="-46.15" width="553.80" height="553.80" rx="55.38" fill="#e6f0fa"
+                                    strokewidth="0"></rect>
+                            </g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <g id="Layer_2_17_">
+                                        <g>
+                                            <path
+                                                d="M268.616,409.893c-3.622,0.977-7.318,1.848-10.986,2.602c-9.596,1.955-15.789,11.32-13.829,20.917 c0.11,0.548,0.247,1.069,0.404,1.593c2.618,8.674,11.466,14.086,20.518,12.239c4.378-0.896,8.79-1.939,13.115-3.103 c9.46-2.544,15.062-12.277,12.517-21.737C287.807,412.932,278.076,407.346,268.616,409.893z">
+                                            </path>
+                                            <path
+                                                d="M144.994,400.018c-3.425-1.524-6.842-3.174-10.157-4.908c-8.687-4.529-19.396-1.163-23.926,7.523 c-2.236,4.272-2.55,9.039-1.258,13.317c1.334,4.412,4.369,8.307,8.772,10.605c3.957,2.061,8.024,4.032,12.104,5.851 c8.941,3.992,19.43-0.016,23.425-8.956C157.949,414.502,153.936,404.02,144.994,400.018z">
+                                            </path>
+                                            <path
+                                                d="M205.979,415.609c-3.73-0.3-7.514-0.723-11.228-1.245c-9.699-1.382-18.673,5.367-20.051,15.065 c-0.374,2.636-0.145,5.213,0.575,7.602c1.933,6.405,7.433,11.441,14.496,12.449c4.419,0.624,8.917,1.125,13.362,1.479 c9.766,0.791,18.317-6.487,19.103-16.247C223.021,424.946,215.747,416.395,205.979,415.609z">
+                                            </path>
+                                            <path
+                                                d="M325.738,383.44c-3.081,2.12-6.277,4.178-9.494,6.12c-7.089,4.271-10.115,12.719-7.833,20.294 c0.42,1.388,1.02,2.748,1.802,4.051c5.052,8.389,15.953,11.083,24.343,6.033c3.825-2.307,7.625-4.761,11.288-7.28 c8.066-5.553,10.11-16.596,4.556-24.661C344.849,379.924,333.803,377.888,325.738,383.44z">
+                                            </path>
+                                            <path
+                                                d="M395.453,335.48c-7.944-5.728-19.028-3.931-24.757,4.008c-2.188,3.037-4.504,6.05-6.875,8.941 c-3.89,4.75-4.9,10.908-3.255,16.375c0.985,3.254,2.911,6.269,5.736,8.585c7.577,6.205,18.75,5.091,24.955-2.487 c2.831-3.45,5.595-7.043,8.202-10.664C405.189,352.294,403.396,341.213,395.453,335.48z">
+                                            </path>
+                                            <path
+                                                d="M420.276,270.883c-9.4-2.746-19.247,2.654-21.989,12.056c-1.054,3.601-2.228,7.217-3.485,10.745 c-1.334,3.713-1.354,7.585-0.292,11.092c1.568,5.203,5.495,9.614,10.994,11.584c9.222,3.307,19.371-1.483,22.683-10.7 c1.504-4.204,2.901-8.508,4.146-12.792C435.074,283.471,429.676,273.62,420.276,270.883z">
+                                            </path>
+                                            <path
+                                                d="M453.552,155.337l-23.307,7.242c-17.688-54.204-54.93-98.746-105.337-125.798c-5.074-2.725-10.221-5.229-15.431-7.53 c-0.038-0.018-0.068-0.033-0.103-0.056c-0.218-0.092-0.447-0.178-0.659-0.272C262.758,8.814,211.901,5.002,163.15,18.204 c-0.383,0.075-0.766,0.147-1.144,0.254c-1.628,0.444-3.271,0.925-4.892,1.409c-2.661,0.804-5.338,1.67-7.964,2.571 c-0.311,0.107-0.604,0.24-0.906,0.36c-43.518,15.075-80.577,42.869-107.015,80.005c-0.094,0.128-0.2,0.238-0.289,0.365 c-2.584,3.629-5.087,7.392-7.451,11.188c-0.148,0.243-0.271,0.496-0.412,0.747c-2.358,3.824-4.624,7.736-6.77,11.726 C4.395,167.665-3.964,213.292,1.739,258.362c0.013,0.103,0.025,0.199,0.034,0.301c0.009,0.072,0.025,0.147,0.042,0.222 c1.55,12.04,4.096,24.041,7.671,35.895c9.388,31.125,25.053,59.112,46.557,83.188c6.523,7.302,17.735,7.932,25.041,1.409 c7.302-6.525,7.939-17.74,1.411-25.04c-10.735-12.013-19.719-25.208-26.91-39.424c-0.077-0.175-0.145-0.354-0.229-0.522 c-1.691-3.354-3.298-6.792-4.786-10.233c-0.008-0.027-0.017-0.043-0.029-0.065c-2.708-6.334-5.069-12.854-7.093-19.553 c-23.243-77.066,6.399-157.708,67.912-202.796c0.91-0.662,1.819-1.33,2.738-1.972c15.792-11.138,33.604-19.97,53.098-25.848 c19.618-5.914,39.457-8.398,58.887-7.816c0.314,0.014,0.619,0.023,0.93,0.032c1.186,0.036,2.368,0.099,3.548,0.165 c0.477,0.025,0.952,0.051,1.428,0.081c60.587,3.79,116.456,37.44,147.82,90.305c0.017,0.03,0.029,0.064,0.05,0.094 c0.465,0.785,0.919,1.569,1.375,2.363c0.054,0.089,0.113,0.168,0.165,0.259c6.001,10.523,11.05,21.784,14.977,33.701 l-23.306,7.246c-6.473,2.011-7.11,6.668-1.429,10.35l50.719,32.852c5.686,3.685,12.468,1.575,15.061-4.676l23.171-55.82 C463.182,156.804,460.02,153.327,453.552,155.337z">
+                                            </path>
+                                            <path
+                                                d="M155.288,231.23c-17.092,12.662-28.75,23.646-34.964,32.95c-6.208,9.303-9.932,19.235-11.155,29.796h106.935v-29.053 h-55.657c3.268-3.213,6.111-5.805,8.533-7.785c2.423-1.991,7.217-5.457,14.395-10.418c12.074-8.517,20.404-16.335,24.985-23.455 c4.577-7.114,6.868-14.582,6.868-22.4c0-7.349-1.997-13.987-5.993-19.912c-3.999-5.919-9.486-10.311-16.456-13.17 c-6.969-2.855-16.728-4.288-29.273-4.288c-12.014,0-21.419,1.505-28.219,4.514c-6.792,3.004-12.061,7.319-15.792,12.944 c-3.735,5.636-6.299,13.467-7.702,23.497l35.704,2.887c0.991-7.229,2.933-12.278,5.818-15.135 c2.891-2.859,6.604-4.29,11.161-4.29c4.373,0,8.006,1.388,10.892,4.16c2.886,2.766,4.332,6.109,4.332,10.02 c0,3.619-1.458,7.438-4.377,11.466C172.406,217.582,165.726,223.476,155.288,231.23z">
+                                            </path>
+                                            <path
+                                                d="M323.651,293.977v-23.979h16.099V242.34h-16.099v-78.844h-31.066l-64.93,77.187v29.315h64.93v23.979H323.651 L323.651,293.977z M258.28,242.34l34.305-40.366v40.366H258.28z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="card-body text-start">
+                        <h5 class="card-title fw-bold">24-Hours ABPM</h5>
+                        <p class="card-text text-muted small">
+                            Continuous blood pressure monitoring over 24 hours to assess hypertension and cardiovascular
+                            health.
+                        </p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="bi bi-shield shield"></i> Same-day results</li>
+                            <li><i class="bi bi-shield shield"></i> Home service available</li>
+                            <li><i class="bi bi-shield shield"></i> Digital reports</li>
+                            <li><i class="bi bi-shield shield"></i> Insurance accepted</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 d-grid">
+                        <a href="abpm.html" class="btn btn-primary fw-bold">View All</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-primary rounded-4 shadow-sm p-3">
+                    <div class="text-start">
+                        <svg class="abmpIcon" fill="#0066cc" version="1.1" id="Capa_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="-46.15 -46.15 553.80 553.80" xml:space="preserve">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0">
+                                <rect x="-46.15" y="-46.15" width="553.80" height="553.80" rx="55.38" fill="#e6f0fa"
+                                    strokewidth="0"></rect>
+                            </g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <g id="Layer_2_17_">
+                                        <g>
+                                            <path
+                                                d="M268.616,409.893c-3.622,0.977-7.318,1.848-10.986,2.602c-9.596,1.955-15.789,11.32-13.829,20.917 c0.11,0.548,0.247,1.069,0.404,1.593c2.618,8.674,11.466,14.086,20.518,12.239c4.378-0.896,8.79-1.939,13.115-3.103 c9.46-2.544,15.062-12.277,12.517-21.737C287.807,412.932,278.076,407.346,268.616,409.893z">
+                                            </path>
+                                            <path
+                                                d="M144.994,400.018c-3.425-1.524-6.842-3.174-10.157-4.908c-8.687-4.529-19.396-1.163-23.926,7.523 c-2.236,4.272-2.55,9.039-1.258,13.317c1.334,4.412,4.369,8.307,8.772,10.605c3.957,2.061,8.024,4.032,12.104,5.851 c8.941,3.992,19.43-0.016,23.425-8.956C157.949,414.502,153.936,404.02,144.994,400.018z">
+                                            </path>
+                                            <path
+                                                d="M205.979,415.609c-3.73-0.3-7.514-0.723-11.228-1.245c-9.699-1.382-18.673,5.367-20.051,15.065 c-0.374,2.636-0.145,5.213,0.575,7.602c1.933,6.405,7.433,11.441,14.496,12.449c4.419,0.624,8.917,1.125,13.362,1.479 c9.766,0.791,18.317-6.487,19.103-16.247C223.021,424.946,215.747,416.395,205.979,415.609z">
+                                            </path>
+                                            <path
+                                                d="M325.738,383.44c-3.081,2.12-6.277,4.178-9.494,6.12c-7.089,4.271-10.115,12.719-7.833,20.294 c0.42,1.388,1.02,2.748,1.802,4.051c5.052,8.389,15.953,11.083,24.343,6.033c3.825-2.307,7.625-4.761,11.288-7.28 c8.066-5.553,10.11-16.596,4.556-24.661C344.849,379.924,333.803,377.888,325.738,383.44z">
+                                            </path>
+                                            <path
+                                                d="M395.453,335.48c-7.944-5.728-19.028-3.931-24.757,4.008c-2.188,3.037-4.504,6.05-6.875,8.941 c-3.89,4.75-4.9,10.908-3.255,16.375c0.985,3.254,2.911,6.269,5.736,8.585c7.577,6.205,18.75,5.091,24.955-2.487 c2.831-3.45,5.595-7.043,8.202-10.664C405.189,352.294,403.396,341.213,395.453,335.48z">
+                                            </path>
+                                            <path
+                                                d="M420.276,270.883c-9.4-2.746-19.247,2.654-21.989,12.056c-1.054,3.601-2.228,7.217-3.485,10.745 c-1.334,3.713-1.354,7.585-0.292,11.092c1.568,5.203,5.495,9.614,10.994,11.584c9.222,3.307,19.371-1.483,22.683-10.7 c1.504-4.204,2.901-8.508,4.146-12.792C435.074,283.471,429.676,273.62,420.276,270.883z">
+                                            </path>
+                                            <path
+                                                d="M453.552,155.337l-23.307,7.242c-17.688-54.204-54.93-98.746-105.337-125.798c-5.074-2.725-10.221-5.229-15.431-7.53 c-0.038-0.018-0.068-0.033-0.103-0.056c-0.218-0.092-0.447-0.178-0.659-0.272C262.758,8.814,211.901,5.002,163.15,18.204 c-0.383,0.075-0.766,0.147-1.144,0.254c-1.628,0.444-3.271,0.925-4.892,1.409c-2.661,0.804-5.338,1.67-7.964,2.571 c-0.311,0.107-0.604,0.24-0.906,0.36c-43.518,15.075-80.577,42.869-107.015,80.005c-0.094,0.128-0.2,0.238-0.289,0.365 c-2.584,3.629-5.087,7.392-7.451,11.188c-0.148,0.243-0.271,0.496-0.412,0.747c-2.358,3.824-4.624,7.736-6.77,11.726 C4.395,167.665-3.964,213.292,1.739,258.362c0.013,0.103,0.025,0.199,0.034,0.301c0.009,0.072,0.025,0.147,0.042,0.222 c1.55,12.04,4.096,24.041,7.671,35.895c9.388,31.125,25.053,59.112,46.557,83.188c6.523,7.302,17.735,7.932,25.041,1.409 c7.302-6.525,7.939-17.74,1.411-25.04c-10.735-12.013-19.719-25.208-26.91-39.424c-0.077-0.175-0.145-0.354-0.229-0.522 c-1.691-3.354-3.298-6.792-4.786-10.233c-0.008-0.027-0.017-0.043-0.029-0.065c-2.708-6.334-5.069-12.854-7.093-19.553 c-23.243-77.066,6.399-157.708,67.912-202.796c0.91-0.662,1.819-1.33,2.738-1.972c15.792-11.138,33.604-19.97,53.098-25.848 c19.618-5.914,39.457-8.398,58.887-7.816c0.314,0.014,0.619,0.023,0.93,0.032c1.186,0.036,2.368,0.099,3.548,0.165 c0.477,0.025,0.952,0.051,1.428,0.081c60.587,3.79,116.456,37.44,147.82,90.305c0.017,0.03,0.029,0.064,0.05,0.094 c0.465,0.785,0.919,1.569,1.375,2.363c0.054,0.089,0.113,0.168,0.165,0.259c6.001,10.523,11.05,21.784,14.977,33.701 l-23.306,7.246c-6.473,2.011-7.11,6.668-1.429,10.35l50.719,32.852c5.686,3.685,12.468,1.575,15.061-4.676l23.171-55.82 C463.182,156.804,460.02,153.327,453.552,155.337z">
+                                            </path>
+                                            <path
+                                                d="M155.288,231.23c-17.092,12.662-28.75,23.646-34.964,32.95c-6.208,9.303-9.932,19.235-11.155,29.796h106.935v-29.053 h-55.657c3.268-3.213,6.111-5.805,8.533-7.785c2.423-1.991,7.217-5.457,14.395-10.418c12.074-8.517,20.404-16.335,24.985-23.455 c4.577-7.114,6.868-14.582,6.868-22.4c0-7.349-1.997-13.987-5.993-19.912c-3.999-5.919-9.486-10.311-16.456-13.17 c-6.969-2.855-16.728-4.288-29.273-4.288c-12.014,0-21.419,1.505-28.219,4.514c-6.792,3.004-12.061,7.319-15.792,12.944 c-3.735,5.636-6.299,13.467-7.702,23.497l35.704,2.887c0.991-7.229,2.933-12.278,5.818-15.135 c2.891-2.859,6.604-4.29,11.161-4.29c4.373,0,8.006,1.388,10.892,4.16c2.886,2.766,4.332,6.109,4.332,10.02 c0,3.619-1.458,7.438-4.377,11.466C172.406,217.582,165.726,223.476,155.288,231.23z">
+                                            </path>
+                                            <path
+                                                d="M323.651,293.977v-23.979h16.099V242.34h-16.099v-78.844h-31.066l-64.93,77.187v29.315h64.93v23.979H323.651 L323.651,293.977z M258.28,242.34l34.305-40.366v40.366H258.28z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="card-body text-start">
+                        <h5 class="card-title fw-bold">24-Hours Holter</h5>
+                        <p class="card-text text-muted small">
+                            A portable device records heart rhythms for 24 hours to detect irregularities and heart
+                            conditions.
+                        </p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="bi bi-shield shield"></i> Same-day results</li>
+                            <li><i class="bi bi-shield shield"></i> Home service available</li>
+                            <li><i class="bi bi-shield shield"></i> Digital reports</li>
+                            <li><i class="bi bi-shield shield"></i> Insurance accepted</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 d-grid">
+                        <a href="holterTest.html" class="btn btn-primary fw-bold">View All</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4th card -->
+            <div class="col-md-4">
+                <div class="card h-100 border-primary rounded-4 shadow-sm p-3">
+                    <div class="text-start">
+                        <svg class="treadmillIcon" viewBox="-4.8 -4.8 57.60 57.60" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
+                                <rect x="-4.8" y="-4.8" width="57.60" height="57.60" rx="5.76" fill="#e6f0fa"
+                                    strokewidth="0"></rect>
+                            </g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M30 14C32.7614 14 35 11.7614 35 9C35 6.23858 32.7614 4 30 4C27.2386 4 25 6.23858 25 9C25 11.7614 27.2386 14 30 14Z"
+                                    fill="#0066cc" stroke="#0066cc" stroke-width="4" stroke-miterlimit="2"></path>
+                                <path d="M11 21L17 16L25 19L22 25L29 31L31 38" stroke="#0066cc" stroke-width="4"
+                                    stroke-miterlimit="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M22 25L17 33L9 32" stroke="#0066cc" stroke-width="4" stroke-miterlimit="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M6 44H40L44 35" stroke="#0066cc" stroke-width="4" stroke-miterlimit="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M25 19L33 24L39 22" stroke="#0066cc" stroke-width="4" stroke-miterlimit="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="card-body text-start">
+                        <h5 class="card-title fw-bold">Treadmill Stress</h5>
+                        <p class="card-text text-muted small">
+                            Exercise-based test that evaluates heart performance and detects cardiovascular issues under
+                            stress.
+                        </p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="bi bi-shield shield"></i> Same-day results</li>
+                            <li><i class="bi bi-shield shield"></i> Home service available</li>
+                            <li><i class="bi bi-shield shield"></i> Digital reports</li>
+                            <li><i class="bi bi-shield shield"></i> Insurance accepted</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 d-grid">
+                        <a href="treadmillStressTest.html" class="btn btn-primary fw-bold">View All</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5th card -->
+            <div class="col-md-4">
+                <div class="card h-100 border-primary rounded-4 shadow-sm p-3">
+                    <div class="text-start">
+                        <svg class="xrayIcon" fill="#0066cc" viewBox="-1.4 -1.4 16.80 16.80" role="img"
+                            focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0">
+                                <rect x="-1.4" y="-1.4" width="16.80" height="16.80" rx="1.68" fill="#e6f0fa"
+                                    strokewidth="0"></rect>
+                            </g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="m 6.476465,2.1679 c -0.01173,0.01 -0.02064,0.088 -0.02064,0.1765 l 0,0.1559 -0.861767,0 c -0.73241,0 -0.870561,0.01 -0.926506,0.047 -0.08526,0.059 -0.08819,0.2177 -0.0029,0.2942 0.05888,0.053 0.126425,0.056 0.926507,0.065 l 0.864698,0.012 0,0.2765 0,0.2764 -1.085301,0 c -1.05,0 -1.085301,0 -1.161767,0.062 -0.09418,0.074 -0.102972,0.2 -0.01466,0.2793 0.05888,0.053 0.129357,0.056 1.161767,0.065 l 1.099959,0.01 0,0.2764 0,0.2794 -1.132328,0 c -0.941165,0 -1.150041,0.01 -1.217712,0.044 -0.144137,0.074 -0.144137,0.2617 -0.0029,0.3382 0.0353,0.018 0.476507,0.029 1.202932,0.029 l 1.15004,0 0,0.2765 0,0.2794 -1.023493,0.01 c -0.920643,0.01 -1.03241,0.015 -1.102891,0.062 -0.09711,0.062 -0.105904,0.2 -0.02064,0.2854 0.05582,0.056 0.09711,0.059 1.102891,0.059 l 1.044136,0 0,0.2941 0,0.2941 -0.994177,0 c -0.850041,0 -1.002972,0.01 -1.058795,0.047 -0.06181,0.041 -0.06474,0.065 -0.06474,0.4176 0,0.7471 0.126425,1.0853 0.447068,1.2029 C 5.144122,8.2121 5.414684,8.0447 5.749986,7.4886 5.938218,7.1769 6.197054,6.9003 6.341191,6.865 l 0.100041,-0.026 0.01466,0.5735 0.01466,0.5764 0.523535,0.01 0.520602,0.01 0,-0.5882 0,-0.5883 0.111767,0.044 c 0.191165,0.082 0.3,0.197 0.591206,0.6323 0.311726,0.4678 0.435342,0.5854 0.65289,0.6088 0.302932,0.035 0.552973,-0.1294 0.66474,-0.4324 0.0706,-0.1853 0.126425,-0.5912 0.126425,-0.9058 0,-0.1883 -0.0088,-0.2236 -0.07353,-0.2854 l -0.0706,-0.074 -1.00285,0 -1.000041,0 0,-0.2941 0,-0.2942 1.052932,0 1.055863,0 0.06181,-0.068 c 0.08233,-0.088 0.08233,-0.1441 -0.0059,-0.2471 l -0.0706,-0.082 -1.047068,-0.01 -1.047069,-0.01 0,-0.2795 0,-0.2764 1.164699,0 c 0.761726,0 1.18241,-0.012 1.220643,-0.032 C 10.03828,4.7536 10.0235,4.5472 9.876436,4.4796 9.829406,4.4586 9.438163,4.4476 8.661778,4.4476 l -1.147109,0 0,-0.2793 0,-0.2764 1.120603,-0.01 1.120602,-0.01 0.05582,-0.071 c 0.07647,-0.091 0.0706,-0.1678 -0.01759,-0.253 l -0.0706,-0.074 -1.105823,0 -1.102891,0 0,-0.2764 0,-0.2764 0.864699,-0.012 0.864699,-0.01 0.07647,-0.071 c 0.09405,-0.088 0.09711,-0.1795 0.0088,-0.2618 -0.06767,-0.065 -0.08526,-0.065 -0.941164,-0.065 l -0.873494,0 0,-0.1765 0,-0.1762 -0.508876,0 c -0.282288,0 -0.520602,0.01 -0.529397,0.021 z m -5.461808,3.0529 0,4.2207 3.203013,0 c 2.526547,0 3.208876,0.01 3.229397,0.035 0.01466,0.021 0.191165,0.4412 0.391124,0.9353 0.197028,0.4941 0.397109,0.9499 0.444137,1.0147 0.191165,0.2794 0.505945,0.5088 0.829397,0.6088 0.123494,0.035 0.21474,0.082 0.241246,0.1235 0.02358,0.032 0.09418,0.2116 0.158795,0.394 0.06462,0.1824 0.132288,0.356 0.15,0.3883 0.02944,0.056 0.06767,0.059 1.397028,0.059 1.194137,0 1.367712,-0.01 1.367712,-0.044 0,-0.024 -0.132411,-0.3911 -0.294137,-0.8147 -0.161727,-0.4265 -0.294137,-0.8 -0.294137,-0.8324 0,-0.032 0.04116,-0.1176 0.08819,-0.1853 0.220603,-0.3265 0.285342,-0.7205 0.179438,-1.0999 -0.03237,-0.1235 -0.09405,-0.3 -0.135342,-0.3911 -0.04116,-0.094 -0.07353,-0.1736 -0.07353,-0.1795 0,-0.01 0.244055,-0.012 0.544055,-0.012 l 0.5443,0 0,-4.2207 0,-4.2206 -5.985342,0 -5.985342,0 0,4.2205 z m 11.617793,0 0,3.8677 -0.438273,0 -0.435342,0 -0.07647,-0.1676 C 11.641205,8.8269 11.426461,8.3002 11.205858,7.7503 10.982324,7.2003 10.797023,6.7444 10.79116,6.7385 c -0.0029,-0.01 -0.06767,0.021 -0.141206,0.056 -0.211685,0.1 -0.41763,0.3058 -0.520602,0.5147 -0.08526,0.1736 -0.09112,0.2059 -0.0794,0.4176 0.0088,0.1941 0.03823,0.2942 0.176507,0.6412 0.09112,0.2265 0.191164,0.4824 0.226466,0.5647 l 0.06181,0.1559 -4.573534,0 -4.573656,0 0,-3.8677 0,-3.8676 5.632451,0 5.632451,0 0,3.8676 z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="card-body text-start">
+                        <h5 class="card-title fw-bold">Fully Digital X-ray</h5>
+                        <p class="card-text text-muted small">
+                            Advanced imaging technology that provides clear, precise diagnostic results with reduced
+                            radiation exposure.
+                        </p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="bi bi-shield shield"></i> Results within 24 Hours</li>
+                            <li><i class="bi bi-shield shield"></i> Digital reports</li>
+                            <li><i class="bi bi-shield shield"></i> HMO accepted</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 d-grid">
+                        <a href="xray.html" class="btn btn-primary fw-bold">View All</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6th card -->
+            <div class="col-md-4">
+                <div class="card h-100 border-primary rounded-4 shadow-sm p-3">
+                    <div class="text-start">
+                        <svg class="echoIcon" viewBox="-51.2 -51.2 614.40 614.40" xmlns="http://www.w3.org/2000/svg"
+                            fill="#0066cc">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0">
+                                <rect x="-51.2" y="-51.2" width="614.40" height="614.40" rx="61.44" fill="#e6f0fa"
+                                    strokewidth="0"></rect>
+                            </g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill="#0066cc"
+                                    d="M490.594 16.5C475.867 89.867 453.31 155.58 422.5 214.063c-21.152 25.636-62.322 41.665-103.53 34.375 43.72-60.817 65.875-137.485 56.75-217.813-16.566 59.05-35.182 107.876-58.876 150.063-15.774 16.782-43.006 26.035-71.03 17.562 32.043-43.75 48.387-99.21 41.78-157.375-10.346 33.145-23.852 63.82-40.313 92.094-14.07 15.776-39.033 24.72-64.843 17.186 21.468-29.682 32.4-67.153 27.938-106.437-8.185 18.823-17.562 36.73-28.063 53.718-13.755 11.638-44.94 9.03-68.406.906l-1.03-.78c12.087-18.074 16.897-41.415 11.655-66.783-4.187 11.166-9.265 21.824-15.186 31.94-10.587 17.13-38.888 3.862-57.5-8.782 15.907 14.915 32.82 40.912 17.375 58.53-8.39 7.818-17.43 15.142-27.095 21.938 23.353-.655 43.408-8.87 58.125-22.22 22.488 19.768 27.623 50.15 16.688 65.876-12.735 12.155-26.297 23.565-40.657 34.188 37.302-4.225 69.916-21.612 93.75-47l1.407 1.125c11.843 22.98 8.502 48.584-3.718 65.188-23.105 21.13-48.766 40.03-76.876 56.687 57.276-6.488 107.018-34.138 142.344-74.25l1.03.813c13.878 25.61 10.338 54.48-3.312 73.062-35.078 31.465-77.614 59.935-130.312 88.625 80.3-9.095 150.015-47.894 199.437-104.22 19.344 39.258 12.064 82.842-10.25 109.47-49.987 43.37-108.914 79.872-177.217 109.97C348.12 465.035 517.375 252.265 490.592 16.5z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="card-body text-start">
+                        <h5 class="card-title fw-bold">Stress Echo</h5>
+                        <p class="card-text text-muted small">
+                            Combines ultrasound imaging with exercise or medication to evaluate heart function and blood
+                            flow efficiency.
+                        </p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="bi bi-shield shield"></i> By Appointment</li>
+                            <li><i class="bi bi-shield shield"></i> Digital reports</li>
+                            <li><i class="bi bi-shield shield"></i> HMO accepted</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 d-grid">
+                        <a href="stress.html" class="btn btn-primary fw-bold">View All</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7th card -->
+            <div class="col-md-4">
+                <div class="card h-100 border-primary rounded-4 shadow-sm p-3">
+                    <div class="text-start">
+                        <svg class="ecgIcon" viewBox="-2.4 -2.4 28.80 28.80" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" stroke="#0066cc">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0">
+                                <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="2.88" fill="#e6f0fa"
+                                    strokewidth="0"></rect>
+                            </g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M18 11.9999H17.1986C16.3689 11.9999 15.9541 11.9999 15.6102 12.1946C15.2664 12.3893 15.0529 12.745 14.6261 13.4564L14.5952 13.5079C14.1976 14.1706 13.9987 14.502 13.7095 14.4965C13.4202 14.4911 13.2339 14.1525 12.8615 13.4753L11.1742 10.4075C10.8269 9.77606 10.6533 9.46034 10.3759 9.44537C10.0986 9.43039 9.892 9.72558 9.47875 10.3159L9.19573 10.7203C8.75681 11.3473 8.53734 11.6608 8.21173 11.8303C7.88612 11.9999 7.50342 11.9999 6.73803 11.9999H6"
+                                    stroke="#0066cc" stroke-width="1.5" stroke-linecap="round"></path>
+                                <path
+                                    d="M8.96173 19.3707L9.43571 18.7895L9.43571 18.7895L8.96173 19.3707ZM12 5.49877L11.4509 6.00966C11.5928 6.16215 11.7917 6.24877 12 6.24877C12.2083 6.24877 12.4072 6.16215 12.5491 6.00966L12 5.49877ZM15.0383 19.3707L15.5123 19.952L15.0383 19.3707ZM9.43571 18.7895C7.98585 17.6072 6.29293 16.0568 4.96881 14.3598C3.63045 12.6445 2.75 10.8821 2.75 9.26044H1.25C1.25 11.3862 2.37926 13.4793 3.7862 15.2825C5.20736 17.1039 6.99532 18.7349 8.48775 19.952L9.43571 18.7895ZM2.75 9.26044C2.75 6.53057 4.0079 4.70454 5.60065 4.04191C7.17297 3.38778 9.35285 3.75479 11.4509 6.00966L12.5491 4.98787C10.1473 2.40661 7.32719 1.69899 5.02447 2.65699C2.74218 3.60649 1.25 6.07936 1.25 9.26044H2.75ZM15.5123 19.952C17.0047 18.735 18.7926 17.1039 20.2138 15.2825C21.6207 13.4794 22.75 11.3862 22.75 9.2604H21.25C21.25 10.8821 20.3695 12.6445 19.0312 14.3598C17.7071 16.0568 16.0142 17.6072 14.5643 18.7895L15.5123 19.952ZM22.75 9.2604C22.75 6.07926 21.2578 3.60639 18.9755 2.65691C16.6728 1.69894 13.8527 2.40662 11.4509 4.98787L12.5491 6.00966C14.6472 3.75479 16.827 3.38774 18.3994 4.04184C19.9921 4.70444 21.25 6.53045 21.25 9.2604H22.75ZM8.48775 19.952C9.7587 20.9884 10.641 21.75 12 21.75L12 20.25C11.2785 20.25 10.8287 19.9254 9.43571 18.7895L8.48775 19.952ZM14.5643 18.7895C13.1713 19.9254 12.7216 20.25 12 20.25L12 21.75C13.359 21.75 14.2413 20.9884 15.5123 19.952L14.5643 18.7895Z"
+                                    fill="#0066cc"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="card-body text-start">
+                        <h5 class="card-title fw-bold">ECG</h5>
+                        <p class="card-text text-muted small">
+                            Quick and non-invasive test that records electrical
+                            signals of the heart to detect rhythm problems and
+                            heart conditions.
+                        </p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="bi bi-shield shield"></i> Results within 24 Hours</li>
+                            <li><i class="bi bi-shield shield"></i> Digital reports</li>
+                            <li><i class="bi bi-shield shield"></i> HMO accepted</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 d-grid">
+                        <a href="ecg.html" class="btn btn-primary fw-bold">View All</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8th card -->
+            <div class="col-md-4">
+                <div class="card h-100 border-primary rounded-4 shadow-sm p-3">
+                    <div class="text-start">
+                        <svg class="ultrasoundIcon" fill="#0066cc" height="200px" width="200px" version="1.2"
+                            baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-25.6 -25.6 307.20 307.20"
+                            xml:space="preserve">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
+                                <rect x="-25.6" y="-25.6" width="307.20" height="307.20" rx="27.647999999999996"
+                                    fill="#e6f0fa" strokewidth="0"></rect>
+                            </g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path id="XMLID_1_"
+                                    d="M215,94.5l-70.9-70.9c-9.1,9.1-23.8,9.1-32.9,0L40.3,94.5C88.6,142.8,166.8,142.8,215,94.5z M145.6,52.1 c7.7-5.3,18.3-3.3,23.6,4.4c5.3,7.7,3.3,18.3-4.4,23.6c-7.7,5.3-18.3,3.3-23.6-4.4C135.9,68,137.8,57.5,145.6,52.1z M89.5,114.9 c-2.1-3.1-3.1-6.7-3.6-10.2c-0.8-5.4,3-16.2,3-16.2c-4.3,0.4-14.9,0.7-19.5,1.1c-4.1,0.4-7.8-2.7-8.1-6.8c-0.4-4.1,2.7-7.8,6.8-8.1 c6.5-0.5,24.5-1.8,24.5-1.8c5.5-0.5,10.3,3.6,10.8,9.1l-1,14.3l18.9-12.5l-6.3-6.6c-1.4-1.4-2.1-3.4-2-5.4l0.9-18.6 c0.2-4,3.6-7.1,7.6-6.9c4,0.2,7.2,3.6,7,7.6c0,0-0.5,11.2-0.8,15.5c3.4,3.6,17.2,18.1,17.2,18.1c0.8,0.8,1.2,1.7,1.6,2.7 c2.5,4.8,1.1,10.8-3.5,13.9c-3.2,2.2-20.4,14-23.9,16.3C109.4,127,96.2,124.6,89.5,114.9z M241,4H14v178h122.2l13.3,34.6 c3.8,10.4,12.7,17.5,22.8,19.4l6.2,18.9l52.3,0l-12.4-35.7c6.5-8,8.8-19.3,5-29.6L220,182h21V4z M230,171h-15.7l-12.9-35.3 c0,0,0,0,0,0c-1.5-3.8-5.3-6.6-9.7-6.6c-5.8,0-10.4,4.7-10.4,10.4c0,2.4,2.6,8.8,3.1,10.2l7.8,21.3H25V14h205V171z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="card-body text-start">
+                        <h5 class="card-title fw-bold">Ultrasound</h5>
+                        <p class="card-text text-muted small">
+                            Safe and painless imaging that uses sound waves to
+                            examine internal organs, soft tissues, and monitor
+                            pregnancies.
+                        </p>
+                        <ul class="list-unstyled text-start">
+                        <li>
+                            <i class="bi bi-shield shield"></i> Same-day results
+                            <br>
+                            <small><em>(Please Note that special tests may require additional time before release.)</em></small>
+                        </li>
+                        <li><i class="bi bi-shield shield"></i> Digital reports</li>
+                        <li><i class="bi bi-shield shield"></i> HMO accepted</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 d-grid">
+                        <a href="ultrasound.html" class="btn btn-primary fw-bold">View All</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9th card -->
+            <div class="col-md-4">
+                <div class="card h-100 border-primary rounded-4 shadow-sm p-3">
+                    <div class="text-start">
+                        <svg class="annualIcon" fill="#0066cc" viewBox="-51.2 -51.2 614.40 614.40"
+                            xmlns="http://www.w3.org/2000/svg" stroke="#0066cc" stroke-width="7.168000000000001">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0">
+                                <rect x="-51.2" y="-51.2" width="614.40" height="614.40" rx="61.44" fill="#e6f0fa"
+                                    strokewidth="0"></rect>
+                            </g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g id="Mentality_analyst">
+                                    <path
+                                        d="M413.8008,68.2761c-15.976,0-27.2612,13.9021-33.2539,23.7556a5.6084,5.6084,0,0,1-9.644-.1226c-5.6655-9.8459-16.6255-23.633-33.5781-23.633-21.1016,0-38.2076,16.5484-38.2076,36.9616a35.9371,35.9371,0,0,0,.6665,6.8536l-.01.0039c.0181.09.24,1.0952.3379,1.5053,7.6513,32.7181,45.5122,62.3321,64.522,75.4249a19.2593,19.2593,0,0,0,21.8593,0c19.0093-13.0928,56.87-42.7068,64.5215-75.4249.0982-.41.32-1.415.3379-1.5053l-.01-.0039a35.929,35.929,0,0,0,.6666-6.8536C452.0084,84.8245,434.9024,68.2761,413.8008,68.2761Zm-67.6631,51.1946a8.1465,8.1465,0,1,1,8.1465,8.1465A8.1465,8.1465,0,0,1,346.1377,119.4707Zm50.3428,30.3918c-6.8056,6.7139-13.8681,9.1124-20.3262,9.1124-9.2431,0-17.25-4.9112-21.5087-9.1124a6,6,0,0,1,8.4052-8.5644,23.6938,23.6938,0,0,0,8.45,4.8769c5.96,1.8418,11.3741.252,16.5518-4.8554a6,6,0,1,1,8.4277,8.5429Zm.3609-22.2453a8.1464,8.1464,0,1,1,8.1464-8.1465A8.1465,8.1465,0,0,1,396.8414,127.6172Z">
+                                    </path>
+                                    <path
+                                        d="M269.7046,371.7759l.0225-.2852c.9355-17.9424-4.6631-33.1728-16.6406-45.2666-29.669-29.9575-89.5581-31.1335-104.4107-30.9475-1.4931.0188-6.8383-.05-11.063.0012-20.2939.2491-72.396,3.6563-99.4218,30.9463-11.95,12.0655-17.55,27.253-16.6465,45.14.0312,3.1836.5918,68.8506-5.8945,103.7285a17.3929,17.3929,0,0,0,17.1367,20.52H260.4712a17.3889,17.3889,0,0,0,17.1778-20.1436C274.2554,454.3315,266.6861,401.9136,269.7046,371.7759Zm-119.48-64.4942a241.4469,241.4469,0,0,1,25.726,1.4366c-9.1645,25.6123-26.7959,36.8359-33.0756,40.1438-6.2559-3.2864-23.6363-14.355-32.857-39.5a242.1869,242.1869,0,0,1,24.7237-1.9849C137.2134,307.3062,147.5474,307.2827,150.2242,307.2817ZM28.5933,481.644a5.2388,5.2388,0,0,1-1.1465-4.3584c6.8291-36.7168,6.1289-103.3593,6.0957-106.1777l-.0078-.2422c-.7637-14.623,3.544-26.458,13.168-36.1826C59.4258,321.8259,79.357,314.97,97.9864,311.33c8.3838,24.6321,23.7895,38.2259,33.6186,44.7449a11.78,11.78,0,0,1,5.2657,9.8242V483.6128H79.47a285.0748,285.0748,0,0,0,3.4272-61.81,6,6,0,0,0-11.9648.916,280.0677,280.0677,0,0,1-3.6377,60.8936H32.7867A5.439,5.439,0,0,1,28.5933,481.644Zm235.99.0713a5.3334,5.3334,0,0,1-4.1123,1.8975H224.79a280.0977,280.0977,0,0,1-3.6377-60.8936,6,6,0,0,0-11.9648-.916,285.1047,285.1047,0,0,0,3.4272,61.81H148.8707V365.8987a11.7689,11.7689,0,0,1,5.2548-9.8172c9.9532-6.6008,25.6333-20.4611,33.9473-45.6938,20.0337,3.3474,42.58,10.228,56.502,24.2954,9.5937,9.6934,13.9043,21.4863,13.1757,36.0449-3.0107,30.418,3.7491,79.8545,8.0508,106.6436A5.3158,5.3158,0,0,1,264.5835,481.7153Z">
+                                    </path>
+                                    <path
+                                        d="M143.0044,182.0562c-29.85,0-54.1347,23.0205-54.1347,51.3164s24.2851,51.3164,54.1347,51.3164,54.1348-23.0205,54.1348-51.3164S172.8541,182.0562,143.0044,182.0562Zm0,90.6328c-23.2334,0-42.1347-17.6377-42.1347-39.3164s18.9013-39.3164,42.1347-39.3164,42.1348,17.6376,42.1348,39.3164S166.2378,272.689,143.0044,272.689Z">
+                                    </path>
+                                    <path
+                                        d="M157.37,242.9553h-28.731a5.112,5.112,0,0,0-4.86,6.6814c1.8672,5.8535,6.7027,13.4331,19.2251,13.4331s17.3584-7.58,19.2256-13.4333A5.1119,5.1119,0,0,0,157.37,242.9553Z">
+                                    </path>
+                                    <path
+                                        d="M171.2,413.5852a8.7886,8.7886,0,1,0,8.788,8.7886A8.7885,8.7885,0,0,0,171.2,413.5852Z">
+                                    </path>
+                                    <path
+                                        d="M171.2,443.7808a8.7886,8.7886,0,1,0,8.788,8.7885A8.7883,8.7883,0,0,0,171.2,443.7808Z">
+                                    </path>
+                                    <path
+                                        d="M210.939,366.4873H187.4708a4.9106,4.9106,0,0,0-4.9107,4.9106v11.7344a16.6448,16.6448,0,1,0,33.29,0V371.3979A4.9106,4.9106,0,0,0,210.939,366.4873Z">
+                                    </path>
+                                    <path
+                                        d="M291.5674,224.2461a6,6,0,0,0,6,6H367.93a6,6,0,0,0,0-12H297.5674A6,6,0,0,0,291.5674,224.2461Z">
+                                    </path>
+                                    <path d="M297.5674,253.9971h39.877a6,6,0,0,0,0-12h-39.877a6,6,0,0,0,0,12Z"></path>
+                                    <path
+                                        d="M236.3218,283.1782a1.0134,1.0134,0,0,1,.1172-1.1543l22.2725-28.8017a22.6051,22.6051,0,0,0,4.7011-13.7618V135.854a6,6,0,0,0-12,0V239.46a10.551,10.551,0,0,1-2.1933,6.4209l-22.2725,28.8018a13.0961,13.0961,0,0,0,10.36,21.1084H393.6978a6,6,0,0,0,0-12H237.3072A1.0151,1.0151,0,0,1,236.3218,283.1782Z">
+                                    </path>
+                                    <path
+                                        d="M474.146,16.3872H273.91a22.5221,22.5221,0,0,0-22.4971,22.4971V82.6694a6,6,0,0,0,12,0V38.8843A10.509,10.509,0,0,1,273.91,28.3872H474.146a10.509,10.509,0,0,1,10.4971,10.4971v234.41a10.509,10.509,0,0,1-10.4971,10.4971H460.2134a6,6,0,0,0,0,12H474.146a22.5221,22.5221,0,0,0,22.4971-22.4971V38.8843A22.5221,22.5221,0,0,0,474.146,16.3872Z">
+                                    </path>
+                                    <path
+                                        d="M91.8951,151.1387h89.854a21.38,21.38,0,0,0,21.3559-21.3555V114.7437h73.9087a6,6,0,0,0,0-12H203.105V82.3818a21.38,21.38,0,0,0-21.3559-21.3559H91.8951a21.38,21.38,0,0,0-21.356,21.3559v47.4014A21.38,21.38,0,0,0,91.8951,151.1387Zm-9.356-68.7569a9.3668,9.3668,0,0,1,9.356-9.3559h89.854a9.3667,9.3667,0,0,1,9.3559,9.3559v47.4014a9.3664,9.3664,0,0,1-9.3559,9.3555H91.8951a9.3664,9.3664,0,0,1-9.356-9.3555Z">
+                                    </path>
+                                    <path d="M103.4332,99.6694h66.8623a6,6,0,0,0,0-12H103.4332a6,6,0,0,0,0,12Z"></path>
+                                    <path d="M103.4332,120.6885h33.3891a6,6,0,0,0,0-12H103.4332a6,6,0,0,0,0,12Z"></path>
+                                    <path
+                                        d="M452.857,342.4731h-8.7593c.0142-.1679.0254-.3369.0254-.5087V301.1772a22.6027,22.6027,0,0,0-8.6978-17.746l-23.8193-18.462a6,6,0,1,0-7.3516,9.4844l23.8194,18.4619a10.5218,10.5218,0,0,1,4.0493,8.2617v40.7872c0,.1718.0117.3408.0259.5087H384.16A21.38,21.38,0,0,0,362.8038,363.83V411.231A21.38,21.38,0,0,0,384.16,432.5864H452.857a21.38,21.38,0,0,0,21.3559-21.3554V363.83A21.38,21.38,0,0,0,452.857,342.4731Zm9.3559,68.7579a9.3666,9.3666,0,0,1-9.3559,9.3554H384.16a9.3666,9.3666,0,0,1-9.3559-9.3554V363.83a9.3669,9.3669,0,0,1,9.3559-9.3565H452.857a9.3669,9.3669,0,0,1,9.3559,9.3565Z">
+                                    </path>
+                                    <path d="M441.4034,369.1167H395.6978a6,6,0,0,0,0,12h45.7056a6,6,0,0,0,0-12Z"></path>
+                                    <path d="M423.0269,390.1362H395.6978a6,6,0,0,0,0,12h27.3291a6,6,0,0,0,0-12Z"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="card-body text-start">
+                        <h5 class="card-title fw-bold">Annual Physical Exam</h5>
+                        <p class="card-text text-muted small">
+                            Combines ultrasound imaging with exercise or
+                            medication to evaluate heart function and blood
+                            flow efficiency.
+                        </p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="bi bi-shield shield"></i> Results within 24 Hours</li>
+                            <li><i class="bi bi-shield shield"></i> Digital reports</li>
+                        <li>
+                            <i class="bi bi-shield shield"></i> HMO accepted 
+                            <br>
+                            <small><em>(Please secure endorsement letter before proceeding to the clinic.)</em></small>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 d-grid">
+                        <a href="ape.html" class="btn btn-primary fw-bold">View All</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10th card -->
+            <div class="col-md-4">
+                <div class="card h-100 border-primary rounded-4 shadow-sm p-3">
+                    <div class="text-start">
+                        <svg class="employmentIcon" fill="#0066cc" version="1.1" id="Capa_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="-91.08 -91.08 1092.97 1092.97" xml:space="preserve">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0">
+                                <rect x="-91.08" y="-91.08" width="1092.97" height="1092.97" rx="109.29700000000001"
+                                    fill="#e6f0fa" strokewidth="0"></rect>
+                            </g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M679.137,855.812V727.309l-6.646,9.089c-24.698,33.77-60.519,58.477-100.857,69.567l-30.426,8.367l-35.989,10.135 H360.491v-30h143.098l-0.312-7.877l-1.247-31.529c-1.653-41.805,11.038-83.426,35.734-117.194l141.37-193.294V55 c0-30.375-24.624-55-55-55H245.482l0,0v172.185c0,33.084-26.916,60-60,60H13.299v623.627c0,30.375,24.624,55,55,55h555.838 C654.513,910.812,679.137,886.188,679.137,855.812z M395.512,124.09c0-14.862,10.475-27.661,25.044-30.592 c22.703-4.567,54.793-10.939,69.521-13.469c7.379-1.268,14.122,4.414,14.122,11.902v57.761c0,30.013-24.33,54.343-54.343,54.343 c-30.014,0-54.344-24.33-54.344-54.343V124.09L395.512,124.09z M360.491,251.514c0-16.569,13.431-30,30-30h118.727 c16.569,0,30,13.431,30,30v89.6c0,5.088-4.125,9.213-9.213,9.213H369.703c-5.088,0-9.213-4.125-9.213-9.213L360.491,251.514 L360.491,251.514z M153.218,436.436h386v50h-386V436.436L153.218,436.436z M153.218,547.436h386v30h-386V547.436L153.218,547.436 z">
+                                            </path>
+                                            <path
+                                                d="M185.482,202.185c16.569,0,30-13.432,30-30V4.679V0.001L13.29,202.185h4.705H185.482z">
+                                            </path>
+                                            <path
+                                                d="M894.308,344.713c6.141-10.87,3.313-24.854-7.012-32.404l-10.468-7.656c-10.32-7.547-24.496-6.008-32.995,3.126 c-0.668,0.718-1.305,1.477-1.899,2.288l-7.223,9.875l-9.083,12.418c-3.427-1.298-7.011-1.954-10.581-1.953 c-9.244,0.001-18.364,4.259-24.239,12.292L679.137,495.389L561.982,655.574c-20.804,28.442-31.367,63.09-29.977,98.301 l1.247,31.529l30.426-8.365c33.979-9.342,63.794-29.908,84.598-58.352l30.859-42.197l197.967-270.677 c8.146-11.137,7.48-26.012-0.69-36.327l9.073-12.404l7.225-9.878C893.301,346.395,893.829,345.562,894.308,344.713z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="card-body text-start">
+                        <h5 class="card-title fw-bold">Pre-employment Exam</h5>
+                        <p class="card-text text-muted small">
+                            Exercise-based test that evaluates heart
+                            performance and detects cardiovascular issues
+                            under stress.
+                        </p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="bi bi-shield shield"></i> Results within 24 Hours</li>
+                            <li><i class="bi bi-shield shield"></i> Digital reports</li>
+                            <li>
+                                <i class="bi bi-shield shield"></i> HMO accepted 
+                                <br>
+                                <small><em>(Please secure endorsement letter before proceeding to the clinic.)</em></small>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 d-grid">
+                        <a href="employment.html" class="btn btn-primary fw-bold">View All</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11th card -->
+            <div class="col-md-4">
+                <div class="card h-100 border-primary rounded-4 shadow-sm p-3">
+                    <div class="text-start">
+                        <svg class="multiIcon" viewBox="-4.8 -4.8 57.60 57.60" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0">
+                                <rect x="-4.8" y="-4.8" width="57.60" height="57.60" rx="5.76" fill="#e6f0fa"
+                                    strokewidth="0"></rect>
+                            </g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <rect width="48" height="48" fill="white" fill-opacity="0.01"></rect>
+                                <path
+                                    d="M30 10C30 6.68629 27.3137 4 24 4C20.6863 4 18 6.68629 18 10V24C18 27.3137 20.6863 30 24 30C27.3137 30 30 27.3137 30 24V10Z"
+                                    stroke="#0066cc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path
+                                    d="M38.1421 18.3431C40.4852 16 40.4852 12.201 38.1421 9.85786C35.7989 7.51471 31.9999 7.51471 29.6568 9.85786L19.7573 19.7574C17.4141 22.1005 17.4141 25.8995 19.7573 28.2426C22.1004 30.5858 25.8994 30.5858 28.2426 28.2426L38.1421 18.3431Z"
+                                    stroke="#0066cc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path
+                                    d="M38 30C41.3137 30 44 27.3137 44 24C44 20.6863 41.3137 18 38 18H24C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30H38Z"
+                                    stroke="#0066cc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path
+                                    d="M29.6568 38.1421C32 40.4853 35.799 40.4853 38.1421 38.1421C40.4853 35.799 40.4853 32 38.1421 29.6568L28.2426 19.7574C25.8995 17.4142 22.1005 17.4142 19.7573 19.7574C17.4142 22.1005 17.4142 25.8995 19.7573 28.2426L29.6568 38.1421Z"
+                                    stroke="#0066cc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path
+                                    d="M18 38C18 41.3137 20.6863 44 24 44C27.3137 44 30 41.3137 30 38L30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24V38Z"
+                                    stroke="#0066cc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path
+                                    d="M9.85795 29.6569C7.5148 32 7.5148 35.799 9.85795 38.1421C12.2011 40.4853 16.0001 40.4853 18.3432 38.1421L28.2427 28.2426C30.5859 25.8995 30.5859 22.1005 28.2427 19.7574C25.8996 17.4142 22.1006 17.4142 19.7574 19.7574L9.85795 29.6569Z"
+                                    stroke="#0066cc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path
+                                    d="M10 18C6.68629 18 4 20.6863 4 24C4 27.3137 6.68629 30 10 30L24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18L10 18Z"
+                                    stroke="#0066cc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path
+                                    d="M18.3432 9.85787C16 7.51472 12.201 7.51472 9.85787 9.85787C7.51473 12.201 7.51473 16 9.85788 18.3432L19.7574 28.2426C22.1005 30.5858 25.8995 30.5858 28.2426 28.2426C30.5858 25.8995 30.5858 22.1005 28.2427 19.7574L18.3432 9.85787Z"
+                                    stroke="#0066cc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="card-body text-start">
+                        <h5 class="card-title fw-bold">Multi Specialty</h5>
+                        <p class="card-text text-muted small">
+                            Advanced imaging technology that provides clear,
+                            precise diagnostic results with reduced radiation
+                            exposure.
+                        </p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="bi bi-shield shield"></i> Doctor’s Schedule may change with Prior notice</li>
+                            <li><i class="bi bi-shield shield"></i> Certain MDs accept HMO</li>
+                            <li><i class="bi bi-shield shield"></i> Call for more details</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 d-grid">
+                        <a href="ourdoctors.html" class="btn btn-primary fw-bold">View All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Contact Group Section -->
+    <div class="contact-group">
+        <a class="contact-btn" href="https://m.me/interPath.Lab"></a>
+        <a class="contact-label" href="https://m.me/interPath.Lab">Contact Us!</a>
+    </div>
+
+    <!-- New Terms & Conditions Modal (manual open, with close X) -->
+    <div class="modal fade" id="termsModalClick" tabindex="-1" aria-labelledby="termsModalClickLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered custom-modal">
+            <div class="modal-content terms-modal-content">
+            
+            <!-- Header with Close X -->
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold terms-title text-center w-100" id="termsModalClickLabel">
+                Terms and Conditions
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Unique Body -->
+            <div class="terms-modal-body">
+                <p>
+                Welcome to Interpath Laboratories’ website. By accessing or using this website, you agree to comply with 
+                and be bound by the following Terms and Conditions. Please read them carefully before using our services.
+                </p>
+                
+                <h6>1. General Use</h6>
+                <p>• This website is owned and operated by Interpath Laboratories, Inc.<br>
+                • The information provided on this site is for general informational purposes only and should not be considered medical advice.<br>
+                • By using our website, you confirm that you are at least 18 years old or are accessing the site under the supervision of a parent or guardian.</p>
+
+                <h6>2. Medical Disclaimer</h6>
+                <p>• Content on this site, including articles, posts, or service descriptions, is provided for educational and informational purposes.<br>
+                • It does not substitute professional medical consultation, diagnosis, or treatment.<br>
+                • Always consult your physician or qualified healthcare provider regarding any medical condition or before making health-related decisions.</p>
+
+                <h6>3. Services and Appointments</h6>
+                <p>• Interpath Laboratories provides laboratory testing, diagnostics, and clinical services both in-clinic and via home service.<br>
+                • Appointment availability is subject to confirmation and may change without prior notice.<br>
+                • Test results will only be released in accordance with our confidentiality and patient data policies.</p>
+
+                <h6>4. Pricing and Payments</h6>
+                <p>• Prices for services are subject to change without prior notice.<br>
+                • Full payment is required at the time of service unless otherwise covered by HMO arrangements or corporate accounts.<br>
+                • Refunds, if applicable, will follow Interpath’s refund and cancellation policy.</p>
+
+                <h6>5. Confidentiality and Data Privacy</h6>
+                <p>• Interpath is committed to protecting patient confidentiality in compliance with the Data Privacy Act of 2012 (RA 10173) and other applicable laws.<br>
+                • Personal and medical information collected will only be used for healthcare delivery, billing, and related purposes.<br>
+                • By using our services, you consent to the collection and use of your information as described in our Privacy Policy.</p>
+
+                <h6>6. Intellectual Property</h6>
+                <p>• All website content—including text, graphics, images, logos, and trademarks—are the property of Interpath Laboratories, Inc. and are protected by applicable intellectual property laws.<br>
+                • You may not copy, reproduce, distribute, or use any material from this website without prior written consent.</p>
+
+                <h6>7. Limitation of Liability</h6>
+                <p>• Interpath Laboratories will not be liable for any damages resulting from the use or inability to use our website or services.<br>
+                • We do not guarantee uninterrupted access, error-free content, or that the website is free from viruses or harmful components.</p>
+
+                <h6>8. Third-Party Links</h6>
+                <p>• Our website may contain links to third-party websites for your convenience.<br>
+                • Interpath is not responsible for the content, security, or privacy practices of external websites.</p>
+
+                <h6>9. Changes to Terms</h6>
+                <p>• Interpath Laboratories reserves the right to modify or update these Terms and Conditions at any time without prior notice.<br>
+                • Continued use of our website after changes are posted constitutes acceptance of the revised Terms.</p>
+
+                <h6>10. Governing Law</h6>
+                <p>• These Terms and Conditions are governed by the laws of the Republic of the Philippines.<br>
+                • Any disputes arising shall be subject to the jurisdiction of the appropriate courts in the Philippines.</p>
+
+                <h6>11. Contact Us</h6>
+                <p>For inquiries regarding these Terms and Conditions, you may contact us at:<br>
+                📧 interpathlaboratories@gmail.com <br> 
+                📞 0998 994 7284 <br> 
+                🏥 Ortigas Ave Ext, Taytay, 1920 Rizal</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-top text-center mb-4">
+        <img src="images/InterpathLogo.png" alt="InterPath Logo" class="footer-logo">
+      </div>
+      <hr>
+      <div class="row text-start text-center text-md-start justify-content-center">
+        <!-- Location -->
+        <div class="col-md-2 mb-4 me-md-4">
+          <p>
+            <strong>Locations:</strong><br>
+            2F & 3F, MORE Business Center, Ortigas Avenue Extension,<br>
+            San Isidro, Taytay, Rizal
+          </p>
+          <p>
+            <strong>Visiting Hours:</strong><br>
+            Monday – Saturday:<br>
+            07:00 AM – 4:00 PM
+          </p>
+        </div>
+        <!-- Community -->
+        <div class="col-md-2 mb-4">
+          <p><strong>Community</strong></p>
+          <ul class="list-unstyled">
+            <li><a href="ourdoctors.html">Doctors</a></li>
+            <li><a href="https://www.google.com/maps/place/InterPath+Laboratories+and+Medical+Center/@14.5801393,121.1320412,896m/data=!3m1!1e3!4m8!3m7!1s0x3397c77afe73b861:0xfaceea22835ad79!8m2!3d14.5801393!4d121.1346161!9m1!1b1!16s%2Fg%2F12jvylqq2?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D">Testimonials</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="https://maps.app.goo.gl/78hUXrhTftRBS1Jq9">Site Map</a></li>
+          </ul>
+        </div>
+        <!-- About -->
+        <div class="col-md-2 mb-4">
+          <p><strong>About</strong></p>
+          <ul class="list-unstyled">
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <!-- Terms + Data -->
+        <div class="col-md-2 mb-4">
+          <p><strong>Trust & Legal</strong></p>
+          <ul class="list-unstyled">
+          <li>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#termsModalClick">
+              Terms & Conditions
+            </a>
+          </li>
+          <li><a href="dataPrivacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="col-md-2 mb-4 text-center">
+          <p><strong>Social Media</strong></p>
+          <div class="d-flex justify-content-center gap-4">
+            <a href="https://www.facebook.com/interPath.Lab"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://www.instagram.com/interpath_lab"><i class="fab fa-instagram fa-lg"></i></a>
+            <a id="viberLink" href="#">
+              <i class="fab fa-viber fa-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom Bar -->
+    <div class="footer-bottom text-center py-3">
+      © InterPath Laboratory and Medical Clinic 2024 All Rights Reserved
+    </div>
+  </footer>
+
+<!-- Custom Modal VIBER PART-->
+<div id="viberModal">
+  <div class="viber-modal-content">
+    <h3>Open your Viber app</h3>
+    <p>and input this number:</p>
+    <div id="viberNumber">+63 998 994 7284</div>
+    <div id="copyMsg">Number copied!</div>
+    <button onclick="document.getElementById('viberModal').style.display='none'">
+      Close
+    </button>
+  </div>
+</div>
+
+<script>
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  const viberLink = document.getElementById("viberLink");
+  const viberModal = document.getElementById("viberModal");
+  const viberNumber = document.getElementById("viberNumber");
+  const copyMsg = document.getElementById("copyMsg");
+
+  if (isMobile) {
+    // On mobile → open Viber chat directly
+    viberLink.href = "viber://chat?number=%2B639989947284";
+  } else {
+    // On desktop → show custom modal popup
+    viberLink.addEventListener("click", function(e) {
+      e.preventDefault();
+      viberModal.style.display = "flex";
+    });
+
+    // Copy number when clicked
+    viberNumber.addEventListener("click", function() {
+      const number = viberNumber.textContent.trim();
+      navigator.clipboard.writeText(number).then(() => {
+        copyMsg.style.display = "block";
+        setTimeout(() => copyMsg.style.display = "none", 2000);
+      });
+    });
+  }
+</script>
+
+  <!-- NavBar -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const servicesToggle = document.getElementById('servicesToggle');
+      const servicesContainer = document.querySelector('.services-container');
+      const caretIcon = servicesToggle.querySelector('.fa-caret-down');
+
+      servicesToggle.addEventListener('click', function(event) {
+          event.preventDefault();
+          servicesContainer.classList.toggle('show');
+          servicesToggle.classList.toggle('show-link');
+          caretIcon.classList.toggle('rotate');
+      });
+    });
+  </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

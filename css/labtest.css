@@ -1,0 +1,2032 @@
+/* ==============================
+   Global Styles
+============================== */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.lead {
+    font-size: 1rem;
+    font-weight: 300;
+}
+/* ==============================
+   Navbar & Logo
+============================== */
+.logo-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #cce2f8;
+  margin-bottom: 60px;
+  width: 330px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #7cb6e6;
+  clip-path: polygon(0% 25%, 100% 25%, 85% 110%, 15% 110%);
+  border-bottom-left-radius: 80px 180px;
+  border-bottom-right-radius: 80px 180px;
+  transition: width 0.3s, height 0.3s;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.logo-container img {
+  margin-top: 40px;
+  max-height: 120px;
+  width: auto;
+  max-width: 90%;
+  height: auto;
+  pointer-events: none;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: #0066cc !important;
+  font-weight: 500;
+  border-radius: 0;
+  padding: 12px 24px;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+  min-width: 140px;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link.active::before { }
+
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #0066CC;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show-link {
+  color: #fff !important;
+}
+
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: #fff;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #0066cc;
+}
+
+.navbar .container {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.left-nav {
+  margin-right: auto;
+  display: flex;
+  gap: 120px;
+}
+
+.right-nav {
+  margin-left: auto;
+  display: flex;
+  gap: 120px;
+}
+
+@media (max-width: 1200px) {
+  .logo-container {
+    transform: translateX(-50%) translateY(-2%);
+    width: 250px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo-container {
+    position: static;
+    margin: 15px auto;
+    width: 180px;
+    height: 90px;
+    border-bottom-left-radius: 40px 90px;
+    border-bottom-right-radius: 40px 90px;
+    pointer-events: auto;
+  }
+}
+
+/* =============================
+    COPY PASTE KAHIT SAAN SA CSS
+    ============================= */
+
+.homeRelative {
+    position: relative;
+}
+
+.homeHovered {
+    opacity: 0;
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+.homeRelative:hover + .homeHovered {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.homeRelative:hover + .homeHovered > .homeHoverImg{
+    left: 4.7%;
+}
+
+.homeRelative:hover + .homeHovered > .homeHoverBox{
+    width: 220px;
+}
+
+.homeHoverImg {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: -6.7%;
+    transform: translateY(-50%) scaleX(-1);
+    height: 132px;
+    width: auto;
+    transition: all 0.4s ease;
+}
+
+.homeHoverBox {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: -7.6%;
+    transform: translateY(-50%);
+    height: 132px;
+    width: 120px;
+    background-color: #0066cc;
+    transition: all 0.4s ease;
+}
+
+.aboutRelative {
+    position: relative;
+}
+
+.aboutHovered {
+    opacity: 0;
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+.aboutRelative:hover + .aboutHovered {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.aboutRelative:hover + .aboutHovered > .aboutHoverImg{
+    left: 17.5%;
+}
+
+.aboutHoverImg {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 27.5%;
+    transform: translateY(-50%) scaleX(-1);
+    height: 132px;
+    width: auto;
+    transition: all 0.4s ease;
+}
+
+.services-container {
+    opacity: 1;
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+
+.services-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.servicesRelative {
+    position: relative;
+}
+
+.servicesHovered {
+    opacity: 1;
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+.servicesRelative:hover + .services-container > .servicesHovered > .servicesHoverImg,
+.services-container.show .servicesHoverImg {
+    right: 17.6%;
+}
+
+.servicesRelative:hover + .services-container,
+.servicesRelative:hover + .services-container > .servicesHovered,
+.servicesRelative:hover .services-container .servicesDropdown,
+.services-container.show .servicesDropdown {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.servicesHoverImg {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    right: 17.6%;
+    transform: translateY(-50%);
+    height: 132px;
+    width: auto;
+    transition: all 0.4s ease;
+}
+
+.servicesDropdown {
+    position: absolute;
+    top: 185%;
+    right: 23.1%;
+    background: #0066cc;
+    padding: 10px 0;
+    list-style: none;
+    z-index: 3;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    width: 140px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+.servicesDropdown li {
+    height: fit-content;
+}
+
+.servicesDropdown li a {
+    width: 100%;
+    height: 55px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s;
+}
+
+.servicesDropdown li a i{
+    margin-left: 28px;
+}
+
+.servicesDropdown li a:hover{
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    
+}
+
+.fa-caret-down {
+    transition: transform 0.3s ease;
+}
+
+.fa-caret-down.rotate {
+    transform: rotate(180deg);
+}
+
+.contactRelative {
+    position: relative;
+}
+
+.contactHovered {
+    opacity: 0;
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+.contactRelative:hover + .contactHovered {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.contactRelative:hover + .contactHovered > .contactHoverImg{
+    right: 3.7%;
+}
+
+.contactRelative:hover + .contactHovered > .contactHoverBox{
+    width: 200px;
+}
+
+.contactHoverImg {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    right: -6.3%;
+    transform: translateY(-50%);
+    height: 132px;
+    width: auto;
+    transition: all 0.4s ease;
+}
+
+.contactHoverBox {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    right: -7.6%;
+    transform: translateY(-50%);
+    height: 132px;
+    width: 100px;
+    background-color: #0066cc;
+    transition: all 0.4s ease;
+}
+
+.vanishingAct {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .homeHovered {
+        display: none;
+    }
+    .homeHoverImg {
+        display: none;
+    }
+    .homeHoverBox {
+        display: none;
+    }
+    .aboutHovered {
+        display: none;
+    }
+    .aboutHoverImg {
+        display: none;
+    }
+    .aboutHoverBox {
+        display: none;
+    }
+    .servicesHovered {
+        display: none;
+    }
+    .servicesHoverImg {
+        display: none;
+    }
+    .servicesHoverBox {
+        display: none;
+    }
+    .contactHovered {
+        display: none;
+    }
+    .contactHoverImg {
+        display: none;
+    }
+    .contactHoverBox {
+        display: none;
+    }
+    .vanishingAct {
+        display: block;
+    }
+    .vanishingAct2 {
+        display: none;
+    }
+    .navbar-nav .nav-link:hover::before,
+    .navbar-nav .nav-link.active::before {
+        transform: translateX(0);
+    }
+}
+
+@media (min-width: 991.98px) and (max-width: 1200px) {
+    .homeRelative:hover + .homeHovered > .homeHoverImg{
+        left: 4% !important;
+    }
+    .homeRelative:hover + .homeHovered > .homeHoverBox{
+        width: 210px !important;
+    }
+    .homeHoverImg {
+        left: -6% !important;
+        height: 127px !important;
+    }
+    .homeHoverBox {
+        left: -11.6% !important;
+        height: 127px !important;
+        width: 110px !important;
+    }
+    .aboutRelative:hover + .aboutHovered > .aboutHoverImg{
+        left: 19.8% !important;
+    }
+    .aboutHoverImg {
+        left: 29.8% !important;
+        height: 127px !important;
+    }
+    .servicesRelative:hover + .services-container > .servicesHovered > .servicesHoverImg,
+    .services-container.show .servicesHoverImg {
+        right: 19.8% !important;
+    }
+    .servicesHoverImg {
+        right: 19.8% !important;
+        height: 127px !important;
+    }
+    .servicesDropdown {
+        top: 195% !important;
+        right: 27% !important;
+        width: 135px !important;
+    }
+    .servicesDropdown li a i{
+        margin-left: 25px !important;
+    }
+    .contactRelative:hover + .contactHovered > .contactHoverImg{
+        right: 5% !important;
+    }
+    .contactRelative:hover + .contactHovered > .contactHoverBox{
+        width: 220px !important;
+    }
+    .contactHoverImg {
+        right: -5% !important;
+        height: 127px !important;
+    }
+    .contactHoverBox {
+        right: -11.6% !important;
+        height: 127px !important;
+        width: 120px !important;
+    }
+    .right-nav {
+        gap: 100px !important;
+    }
+}
+
+@media (max-width: 1399px) {
+    .homeRelative:hover + .homeHovered > .homeHoverImg{
+        left: 5%;
+    }
+    .homeRelative:hover + .homeHovered > .homeHoverBox{
+        width: 240px;
+    }
+    .homeHoverImg {
+        left: -5%;
+        height: 132px;
+    }
+    .homeHoverBox {
+        left: -11.3%;
+        height: 132px;
+        width: 140px;
+    }
+    .aboutRelative:hover + .aboutHovered > .aboutHoverImg{
+        left: 20%;
+    }
+    .aboutHoverImg {
+        left: 30%;
+        height: 132px;
+    }
+    .servicesRelative:hover + .services-container > .servicesHovered > .servicesHoverImg,
+    .services-container.show .servicesHoverImg {
+        right: 20.4%;
+    }
+    .servicesHoverImg {
+        right: 20.4%;
+        height: 132px;
+    }
+    .servicesDropdown {
+        right: 26.8%;
+    }
+    .servicesDropdown li a i{
+        margin-left: 27px;
+    }
+    
+    .contactRelative:hover + .contactHovered > .contactHoverImg{
+        right: 6%;
+    }
+    .contactRelative:hover + .contactHovered > .contactHoverBox{
+        width: 255px;
+    }
+    .contactHoverImg {
+        right: -4%;
+        height: 132px;
+    }
+    .contactHoverBox {
+        right: -11.3%;
+        height: 132px;
+        width: 155px;
+    }
+}
+
+/* ============================= */
+/* header                        */
+/* ============================= */
+.section-header {
+  display: inline-block;
+  background: #d9edc2;
+  color: #000;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 8px 20px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ============================= */
+/* Feature                       */
+/* ============================= */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: -40px auto;
+  max-width: 1300px;
+  padding: 0 15px;
+}
+
+.feature-card {
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+}
+
+.feature-card .icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.feature-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #333;
+}
+
+.feature-lab {
+  background: rgba(0, 102, 204, 0.5);
+  color: #fff;
+}
+
+.feature-lab h3,
+.feature-lab p {
+  color: #000000;
+}
+
+.feature-same {
+  background: rgba(0, 102, 204, 0.2);
+}
+
+.feature-hmo {
+  background: #fff;
+  border: 2px solid #0066CC;
+}
+
+/* ============================= */
+/* Disclaimer                    */
+/* ============================= */
+.disclaimer {
+  background-image: linear-gradient(rgba(149, 200, 72, 0), rgba(149, 200, 72, 0.5), rgba(149, 200, 72, 0));
+  text-align: center;
+  padding: 60px 15px;
+  font-size: 0.85rem;
+  color: #222;
+  margin: 60px auto 20px;
+}
+
+.disclaimer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.disclaimer a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* ============================= */
+/* Healthcare Solutions          */
+/* ============================= */
+.lab-section {
+  position: relative;
+  width: 100%;
+  height: 304px;
+  overflow: hidden;
+}
+
+.lab-test-img {
+  width: 1920px;
+  height: 304px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.lab-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  text-align: center;
+  width: 80%;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+/* ============================= */
+/* Layout & Packages             */
+/* ============================= */
+.lab-layout {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 1400px;
+}
+
+.package-card {
+  border: 3px solid #0066CC;
+  border-radius: 8px;
+  background: #fff;
+  padding: 15px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.package-card h3 {
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.package-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  text-align: left;
+  font-size: 0.85rem;
+  flex-grow: 1;
+}
+
+.package-card .avail {
+  font-weight: bold;
+  margin-top: auto;
+  text-align: center;
+}
+
+.avail {
+  color: #9CCB42;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-top: 2px solid #000; 
+  padding-top: 8px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;  
+  margin: 5px 0;
+}
+
+.subtitle::before,
+.subtitle::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #000; 
+  margin: 0 10px;
+}
+
+
+/* ============================= */
+/* MANUAL SIZES (edit freely)    */
+/* ============================= */
+.package-hypertension {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  width: 240px;
+  height: 520px;
+}
+
+.package-diabetes1 {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  width: 240px;
+  height: 350px;
+}
+
+.package-ipath {
+  grid-column: 3;
+  grid-row: 1;
+  width: 240px;
+  height: 350px;
+}
+
+.package-preemployment1 {
+  grid-column: 4;
+  grid-row: 1;
+  width: 240px;
+  height: 250px;
+}
+
+.package-preemployment2 {
+  display: none;
+}
+
+.package-cholesterol {
+  grid-column: 5;
+  grid-row: 1;
+  width: 240px;
+  height: 250px;
+}
+
+.package-cholesterol2 {
+  display: none;
+}
+
+.package-cholesterol3 {
+  display: none;
+}
+
+.package-logo {
+  grid-column: 1;
+  grid-row: 2;
+  width: 240px;
+  height: 180px;
+  margin-top: 1.5px;
+  margin-left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgba(239, 115, 48, 0.45);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.package-logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.package-logo .logo-front {
+  z-index: 2;
+}
+
+.package-logo .logo-back {
+  z-index: 1;
+  margin-top: -45px;
+}
+
+.package-logo2 {
+  grid-column: 1;
+  grid-row: 2;
+  width: 240px;
+  height: 180px;
+  margin-top: 1.5px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgba(239, 115, 48, 0.45);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.package-logo2 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.package-logo2 .logo-front {
+  z-index: 2;
+}
+
+.package-logo2 .logo-back {
+  z-index: 1;
+  margin-top: -45px;
+}
+
+.package-diabetes2 {
+  grid-column: 2;
+  grid-row: 2 / span 2;
+  width: 240px;
+  height: 350px;
+  margin-top: -70%;
+  margin-left: 6%;
+}
+
+.package-cardiac {
+  grid-column: 3;
+  grid-row: 2;
+  width: 240px;
+  height: 350px;
+  margin-top: -70%;
+  margin-left: 13.5%;
+}
+
+.package-homecare,
+.package-homecare2 {
+  grid-column: 4 / span 2;
+  grid-row: 2;
+  width: 495px;
+  height: 250px;
+  margin-top: -53%;
+  margin-left: 3.5%;
+  background: linear-gradient(90deg, #fcd2e0, #ffffff);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 15px;
+  gap: 20px;
+  position: relative;
+}
+
+.package-homecare img,
+.package-homecare2 img {
+  width: 55%;
+  height: 120%;
+  object-fit: cover;
+  border-radius: 8px;
+  z-index: 1;
+  margin-top: 5px;
+}
+
+.package-homecare .homecare-text,
+.package-homecare2 .homecare-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  z-index: 2;
+  margin-left: -100px;
+}
+
+.package-homecare .homecare-text h3,
+.package-homecare2 .homecare-text h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+  margin-right: 50px;
+}
+
+.package-homecare .homecare-text .subtitle,
+.package-homecare2 .homecare-text .subtitle {
+  text-decoration: underline;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  margin-right: -300px;
+}
+
+.package-homecare .homecare-text p,
+.package-homecare2 .homecare-text p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+  width: 300px;
+  text-align: center;
+  margin-left: -40px;
+  white-space: normal;
+}
+
+.package-homecare2 {
+  display: none;
+}
+
+.package-otherservices {
+  grid-column: 4 / 5;
+  grid-row: 3;
+  margin-left: 79.5%;
+  margin-top: -197px;
+  width: 495px;
+  height: 180px;
+  padding: 15px;
+  text-align: center;
+  background: #f5faff;
+  border-radius: 8px;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.services-grid a {
+  background: rgba(153, 202, 54, 0.5);
+  color: #000;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  line-height: 1.1;
+  text-decoration: none; /* remove underline */
+  display: inline-block; /* make it behave like a button */
+}
+
+.services-grid a:hover {
+  background: #99CA36;
+  color: #fff;
+}
+
+/* Highlighted buttons (ABPM and Holter) */
+.services-grid .highlight {
+  background: #99CA36;
+  color: #fff;
+  grid-column: auto; /* remove full-width spanning */
+  width: 100%;
+}
+
+/* Optional: make both buttons equal height and width */
+.services-grid a {
+  min-width: 120px;
+  height: 100%;
+}
+
+/* Responsive adjustment: 1 per row on small screens */
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ==============================
+   Contact Group
+============================== */
+.contact-group {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-btn {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 9999px;
+    background-color: #180e85;
+    background-image: url("/images/contact.png");
+    background-size: 73%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(2,6,23,0.2);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.12s, box-shadow 0.12s;
+    z-index: 1000;
+}
+
+.contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(2,6,23,0.22)
+}
+
+.contact-btn:active {
+    transform: translateY(-1px)
+}
+
+.contact-btn:focus {
+    outline: 3px solid rgba(14,165,233,0.24)
+}
+
+.contact-icon {
+    width: 22px;
+    height: 22px
+}
+
+.contact-label {
+    position: absolute;
+    right: 5.2rem;
+    bottom: 2rem;
+    background: #1a0f91;
+    color: #fff;
+    padding: 10px 15px;
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+    font-size: 0.9rem;
+    box-shadow: 0 8px 20px rgba(2,6,23,0.15);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out, right 0.2s ease-in-out;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.contact-btn:hover + .contact-label {
+    display: block;
+    opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .contact-btn {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .contact-label {
+    right: 4.4rem;
+    bottom: 1.6rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 750px) {
+  .contact-btn {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .contact-label {
+    right: 3.3rem;
+    bottom: 1rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .logo-container {
+    width: 250px;
+    height: 120px;
+  }
+  .logo-container img {
+    margin-top: 20px;
+    max-height: 80px;
+  }
+  .navbar-nav .nav-link {
+    padding: 10px 16px;
+    font-size: 1rem;
+    min-width: 110px;
+  }
+}
+
+/* ==============================
+   Terms & Conditions Modal FOOTER
+============================== */
+
+.custom-modal {
+  margin-top: 25px;
+}
+
+.terms-modal-content {
+  border: 3px solid #95C848;
+  background: #fff;
+  color: #303030;
+  border-radius: 8px; /* optional for smoother corners */
+}
+
+.terms-title {
+  color: #95C848;
+  text-align: center;
+  font-weight: bold;
+  padding: 1px 0;
+}
+
+
+.terms-modal-body {
+  max-height: 540px;
+  overflow-y: auto;
+  padding: 0 20px;  
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Scrollbar styling */
+.terms-modal-body::-webkit-scrollbar {
+  width: 8px;
+}
+.terms-modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.terms-modal-body::-webkit-scrollbar-thumb {
+  background: #95C848;
+  border-radius: 10px;
+}
+.terms-modal-body::-webkit-scrollbar-thumb:hover {
+  background: #7cb132;
+}
+
+/* Section headings inside modal */
+.terms-modal-body h6 {
+  margin: 15px 0 8px;
+  font-weight: 600;
+  color: #95C848;
+  text-align: left;
+}
+
+/* Paragraph text */
+.terms-modal-body p {
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+/* ==============================
+   VIBER 
+============================== */
+
+/* Modal Background */
+#viberModal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Content */
+.viber-modal-content {
+  background: #fff;
+  border: 2px solid #99CA36;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 350px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.viber-modal-content h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.viber-modal-content p {
+  margin: 0 0 15px;
+  color: #555;
+}
+
+/* Viber Number */
+#viberNumber {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #99CA36;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Copy confirmation */
+#copyMsg {
+  color: #28a745;
+  font-size: 0.9rem;
+  display: none;
+  margin-bottom: 15px;
+}
+
+/* Close Button */
+.viber-modal-content button {
+  background: #99CA36;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ==============================
+   Footer
+============================== */
+.footer-section {
+  background: #d6e9fa;
+  color: #000;
+  padding: 40px 0 0;
+}
+
+.footer-logo {
+  max-height: 120px;
+  width: auto;
+}
+
+.footer-section hr {
+  border: none;
+  border-top: 2px solid #000000;
+  margin: 20px 0;
+}
+
+.footer-section p,
+.footer-section ul li a {
+  color: #000;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.footer-section ul {
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 6px;
+}
+
+.footer-section a:hover {
+  color: #0066CC;
+}
+
+.footer-bottom {
+  background: #0066CC;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+/* ==============================
+   Responsive
+============================== */
+@media (max-width: 992px) {
+  .logo-container {
+    position: static;
+    transform: none;
+    margin: 15px auto;
+    width: 180px;
+    height: 90px;
+    border-bottom-left-radius: 40px 90px;
+    border-bottom-right-radius: 40px 90px;
+    pointer-events: auto;
+  }
+
+  .logo-container img {
+    margin-top: 10px;
+    max-height: 60px;
+  }
+
+  .navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    justify-content: flex-start;
+    min-width: unset;
+    width: 100%;
+    text-align: left;
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .logo-container {
+    width: 250px;
+    height: 120px;
+  }
+
+  .logo-container img {
+    margin-top: 20px;
+    max-height: 80px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 16px;
+    font-size: 1rem;
+    min-width: 110px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-container {
+    width: 120px;
+    height: 60px;
+    border-bottom-left-radius: 20px 40px;
+    border-bottom-right-radius: 20px 40px;
+  }
+
+  .logo-container img {
+    margin-top: 4px;
+    max-height: 32px;
+  }
+
+  .navbar {
+    padding: 10px 0;
+    min-height: 50px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 14px 10px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-section .row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center !important;
+    margin-bottom: 18px;
+  }
+
+  .footer-section .footer-logo {
+    max-height: 70px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .lab-div {
+    margin-bottom: 65px;
+  }
+  
+  .lab-layout {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .package-hypertension {
+    grid-column: 1;
+    grid-row: 1;
+    width: 240px;
+    height: 510px;
+  }
+
+  .package-diabetes1 {
+    grid-column: 2;
+    grid-row: 1;
+    width: 240px;
+    height: 365px;
+  }
+
+  .package-ipath {
+    grid-column: 3;
+    grid-row: 1;
+    width: 240px;
+    height: 365px;
+  }
+
+  .package-preemployment1 {
+    grid-column: 4;
+    grid-row: 1;
+    width: 240px;
+    height: 272px;
+    margin-left: 6%;
+  }
+  
+  .package-cholesterol {
+    grid-column: 1;
+    grid-row: 2;
+    width: 240px;
+    height: 220px;
+    margin-top: -1%;
+    margin-left: 3%;
+  }
+
+  .package-logo {
+    display: none;
+  }
+
+  .package-logo2 {
+    display: flex;
+    margin-left: -1%;
+  }
+
+  .package-diabetes2 {
+    grid-column: 2;
+    grid-row: 2;
+    width: 240px;
+    height: 365px;
+    margin-top: -61%;
+    margin-left: 3.5%;
+  }
+
+  .package-cardiac {
+    grid-column: 3;
+    grid-row: 2;
+    width: 240px;
+    height: 365px;
+    margin-top: -61%;
+    margin-left: 10%;
+  }
+
+  .package-homecare {
+    display: none;
+  }
+
+  .package-homecare2 {
+    grid-column: 4;
+    grid-row: 2;
+    width: 240px;
+    height: 455px;
+    margin-top: -99%;
+    margin-left: 2.5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .package-homecare2 img {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+  }
+
+  .package-homecare2 .homecare-text {
+    padding: 10px 0;
+    margin-left: 0;
+  }
+
+  .package-homecare2 .homecare-text h3 {
+    margin-right: 0;
+  }
+
+  .package-homecare2 .homecare-text .subtitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .package-homecare2 .homecare-text p {
+    margin: 0;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .imgResponsive1 {
+    display: none;
+  }
+
+  .package-otherservices {
+    grid-column: 2 / 4;
+    grid-row: 3;
+    margin-left: 2%;
+    margin-top: 0%;
+    width: 780px;
+    height: 180px;
+  }
+  .services-grid {
+    margin: 0 8%
+  }
+
+  .services-grid .highlight {
+    width: 50%;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  .lab-div {
+    margin-bottom: 65px;
+  }
+  
+  .lab-layout {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .package-hypertension {
+    grid-column: 1;
+    grid-row: 1;
+    width: 250px;
+    /* height: 510px; */
+  }
+
+  .package-diabetes1 {
+    grid-column: 2;
+    grid-row: 1;
+    width: 250px;
+    height: 385px;
+  }
+
+  .package-ipath {
+    grid-column: 3;
+    grid-row: 1;
+    width: 250px;
+    height: 385px;
+  }
+
+  .package-preemployment1 {
+    grid-column: 1;
+    grid-row: 2;
+    width: 250px;
+    margin-left: 0%;
+  }
+
+  .package-preemployment2 {
+    display: none;
+  }
+
+  .package-cholesterol,
+  .package-cholesterol3 {
+    display: none;
+  }
+
+  .package-cholesterol2 {
+    display: flex;
+    grid-column: 1;
+    grid-row: 3;
+    width: 250px;
+    margin-top: 0%;
+    margin-left: 2.5%;
+  }
+
+  .package-logo {
+    display: none;
+  }
+
+  .package-logo2 {
+    display: none;
+  }
+
+  .package-diabetes2 {
+    grid-column: 2;
+    grid-row: 2;
+    width: 250px;
+    height: 385px;
+    margin-top: -54%;
+    margin-left: -6.5%;
+  }
+
+  .package-cardiac {
+    grid-column: 3;
+    grid-row: 2;
+    width: 250px;
+    height: 385px;
+    margin-top: -54%;
+    margin-left: 0%;
+  }
+
+  .package-homecare {
+    display: none;
+  }
+
+  .package-homecare2 {
+    grid-column: 2 / 3;
+    grid-row: 3;
+    width: 530px;
+    height: 242px;
+    margin-top: 0%;
+    margin-left: 1.5%;
+    display: flex;
+  }
+
+  .imgResponsive2 {
+    display: none;
+  }
+
+  .package-otherservices {
+    grid-column: 1 / 3;
+    grid-row: 4;
+    margin-left: -0.2%;
+    margin-top: 0%;
+    width: 810px;
+    height: 180px;
+  }
+  .services-grid {
+    margin: 0 15%
+  }
+
+  .services-grid .highlight {
+    width: 50%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .lab-div {
+    margin-bottom: 65px;
+  }
+  
+  .lab-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .package-hypertension {
+    grid-column: 1;
+    grid-row: 1;
+    width: 250px;
+    /* height: 510px; */
+  }
+
+  .package-diabetes1 {
+    grid-column: 1;
+    grid-row: 2;
+    width: 250px;
+    height: 385px;
+  }
+
+  .package-ipath {
+    grid-column: 1;
+    grid-row: 3;
+    width: 250px;
+    height: 385px;
+    margin-left: 10%;
+  }
+
+  .package-preemployment1 {
+    display: none;
+  }
+
+  .package-preemployment2 {
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+    width: 250px;
+    margin-top: -111.5%;
+    margin-left: 6%;
+  }
+
+  .package-cholesterol,
+  .package-cholesterol2 {
+    display: none;
+  }
+
+  .package-cholesterol3 {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    width: 250px;
+    /* height: 220px; */
+    margin-top: 0%;
+    margin-left: 6%;
+  }
+
+  .package-logo {
+    display: none;
+  }
+
+  .package-logo2 {
+    display: none;
+  }
+
+  .package-diabetes2 {
+    grid-column: 2;
+    grid-row: 3;
+    width: 250px;
+    height: 385px;
+    margin-top: -160%;
+    margin-left: -3%;
+  }
+
+  .package-cardiac {
+    grid-column: 2;
+    grid-row: 4;
+    width: 250px;
+    height: 385px;
+    margin-top: -160.5%;
+    margin-left: 66%;
+  }
+
+  .package-homecare {
+    display: none;
+  }
+
+  .package-homecare2 {
+    grid-column: 1 / 2;
+    grid-row: 5;
+    width: 530px;
+    height: 242px;
+    margin-top: -3%;
+    margin-left: 3%;
+    display: flex;
+  }
+
+  .imgResponsive2 {
+    display: none;
+  }
+
+  .package-otherservices {
+    grid-column: 1 / 3;
+    grid-row: 4;
+    margin-left: 1.5%;
+    margin-top: 0%;
+    width: 531px;
+    height: 180px;
+  }
+  .services-grid {
+    margin: 0 15%
+  }
+
+  .services-grid .highlight {
+    width: 50%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .lab-div {
+    margin-bottom: 65px;
+  }
+  
+  .lab-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .package-hypertension {
+    grid-column: 1;
+    grid-row: 1;
+    width: 250px;
+    /* height: 510px; */
+  }
+
+  .package-diabetes1 {
+    grid-column: 1;
+    grid-row: 2;
+    width: 250px;
+    height: 385px;
+  }
+
+  .package-ipath {
+    grid-column: 1;
+    grid-row: 3;
+    width: 250px;
+    height: 385px;
+    margin-left: -43.5%;
+  }
+
+  .package-preemployment1 {
+    display: none;
+  }
+
+  .package-preemployment2 {
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+    width: 250px;
+    margin-top: -111.5%;
+    margin-left: 6%;
+  }
+
+  .package-cholesterol,
+  .package-cholesterol2 {
+    display: none;
+  }
+
+  .package-cholesterol3 {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    width: 250px;
+    /* height: 220px; */
+    margin-top: 0%;
+    margin-left: 6%;
+  }
+
+  .package-logo {
+    display: none;
+  }
+
+  .package-logo2 {
+    display: none;
+  }
+
+  .package-diabetes2 {
+    grid-column: 2;
+    grid-row: 3;
+    width: 250px;
+    height: 385px;
+    margin-top: -321%;
+    margin-left: 112.5%;
+  }
+
+  .package-cardiac {
+    grid-column: 2;
+    grid-row: 4;
+    width: 250px;
+    height: 385px;
+    margin-top: -160.5%;
+    margin-left: 6%;
+  }
+
+  .package-homecare {
+    display: none;
+  }
+
+  .package-homecare2 {
+    grid-column: 1 / 2;
+    grid-row: 5;
+    width: 530px;
+    height: 242px;
+    margin-top: -6%;
+    margin-left: 0%;
+    display: flex;
+  }
+
+  .imgResponsive2 {
+    display: none;
+  }
+
+  .package-otherservices {
+    grid-column: 1 / 3;
+    grid-row: 4;
+    margin-top: -3%;
+    margin-left: 0%;
+    width: 531px;
+    height: 180px;
+  }
+  .services-grid {
+    margin: 0 15%
+  }
+
+  .services-grid .highlight {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .lab-services .row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+  .lab-services .col-auto {
+    width: 100% !important;
+    max-width: 350px;
+    margin: 0 auto !important;
+  }
+
+  .lab-div {
+    margin-bottom: 65px;
+  }
+
+  .lab-layout {
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .package-card {
+    flex: 1 1 100%;
+    max-width: 350px;
+  }
+
+  .lab-layout {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    margin: 0 auto;
+  }
+
+  .package-card {
+    height: auto !important;
+    margin: 10px auto !important;
+  }
+  
+  .package-diabetes1,
+  .package-ipath,
+  .package-cholesterol,
+  .package-diabetes2,
+  .package-otherservices {
+    width: 90%;
+    margin-top: -10% !important;
+  }
+
+  .package-hypertension {
+    grid-column: 1;
+    grid-row: 1;
+    width: 90%;
+  }
+
+  .package-diabetes1 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .package-ipath {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .package-preemployment1 {
+    grid-column: 1;
+    grid-row: 4;
+    width: 90%;
+    margin-top: -3% !important;
+  }
+
+  .package-cholesterol {
+    grid-column: 1;
+    grid-row: 5;
+    width: 90%;
+    margin-top: -3% !important;
+  }
+
+  .package-logo {
+    display: none;
+  }
+
+  .package-diabetes2 {
+    grid-column: 1;
+    grid-row: 6;
+  }
+
+  .package-cardiac {
+    grid-column: 1;
+    grid-row: 7;
+    width: 90%;
+    margin-top: -3% !important;
+  }
+
+  .package-homecare {
+    display: none;
+  }
+
+  .package-homecare2 {
+    grid-column: 1;
+    grid-row: 8;
+    height: 350px !important;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: -15% !important;
+  }
+
+  .package-homecare2 img {
+    width: 100%;
+    height: 100%;
+    margin-top: -45px !important;
+  }
+
+  .package-homecare2 .homecare-text {
+    padding: 10px 0;
+    margin-left: 0;
+  }
+
+  .package-homecare2 .homecare-text h3 {
+    margin-right: 0;
+  }
+
+  .package-homecare2 .homecare-text .subtitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .package-homecare2 .homecare-text p {
+    margin: 0;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .imgResponsive1 {
+    display: none;
+  }
+
+  .package-otherservices {
+    grid-column: 1;
+    grid-row: 9;
+    height: 180px;
+  }
+  .services-grid {
+    margin: 0;
+  }
+
+  .services-grid .highlight {
+    width: 50%;
+  }
+}
